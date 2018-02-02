@@ -89,6 +89,7 @@ class Manager(object):
         self.__gym_rules = {}
         self.__egg_rules = {}
         self.__raid_rules = {}
+        self.__weather_rules = {}
 
         # Initialize the queue and start the process
         self.__queue = Queue()
@@ -220,6 +221,24 @@ class Manager(object):
                                  "named {}!".format(alarm))
 
         self.__raid_rules[name] = Rule(filters, alarms)
+        
+    # Add new Weather Rule
+    def add_weather_rule(self, name, filters, alarms):
+        if name in self.__weather_rules:
+            raise ValueError("Unable to add Rule: Weather Rule with the name "
+                             "{} already exists!".format(name))
+
+        for filt in filters:
+            if filt not in self.__weather_filters:
+                raise ValueError("Unable to create Rule: No weather Filter "
+                                 "named {}!".format(filt))
+
+        for alarm in alarms:
+            if alarm not in self.__alarms:
+                raise ValueError("Unable to create Rule: No Alarm "
+                                 "named {}!".format(alarm))
+
+        self.__weather_rules[name] = Rule(filters, alarms)
 
     # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -971,7 +990,7 @@ class Manager(object):
                     log.info("{} weather notification"
                              " has been triggered in rule '{}'!"
                              "".format(weather.weather_cell_id, r_name))
-                self._trigger_weather(weather, weather.alarm_names)
+                self._trigger_weather(weather, rule.alarm_names)
                 break  # Next rule
 
     def _trigger_weather(self, weather, alarms):
