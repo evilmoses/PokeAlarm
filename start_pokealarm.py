@@ -140,7 +140,7 @@ def parse_settings(root_path):
         action='append', default=[],
         help='Names of Manager processes to start.')
     parser.add_argument(
-        '-k', '--key', type=str, action='append', default=[],
+        '-k', '--key', type=str, action='append', default=[None],
         help='Specify a Google API Key to use.')
     parser.add_argument(
         '-f', '--filters', type=parse_unicode, action='append',
