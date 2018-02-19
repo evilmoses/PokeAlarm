@@ -201,9 +201,10 @@ def parse_settings(root_path):
     config['DEBUG'] = args.debug
 
     # Check to make sure that the same number of arguments are included
-    for arg in [args.filters, args.alarms, args.geofences,
-                args.location, args.locale, args.units, args.cache_type,
-                args.timelimit, args.max_attempts, args.timezone]:
+    for arg in [args.key, args.filters, args.alarms, args.rules,
+                args.geofences, args.location, args.locale, args.units,
+                args.cache_type, args.timelimit, args.max_attempts,
+                args.timezone]:
         if len(arg) > 1:  # Remove defaults from the list
             arg.pop(0)
         size = len(arg)
