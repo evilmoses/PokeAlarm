@@ -116,8 +116,8 @@ class MonEvent(BaseEvent):
             cpiv = "IV: " + "{:.0f}".format(self.iv)  \
                 + "% CP: " + str(self.cp) \
                 + " Level: " + str(self.mon_lvl) + "\n" \
-                + locale.get_move_name(self.quick_move_id) + " / " \
-                + locale.get_move_name(self.charge_move_id) \
+                + locale.get_move_name(self.quick_id) + " / " \
+                + locale.get_move_name(self.charge_id) \
                 + "\nAtt: " + str(self.atk_iv) \
                 + " Def: " + str(self.def_iv) \
                 + " Sta: " + str(self.sta_iv) + "\n"
