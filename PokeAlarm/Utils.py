@@ -12,6 +12,7 @@ import sys
 from PokeAlarm import not_so_secret_url
 from PokeAlarm import config
 from LSP import gSt
+from PokeAlarm import Unknown
 
 log = logging.getLogger('Utils')
 
@@ -127,6 +128,18 @@ def get_team_id(team_name):
                     nm = j[id_].lower()
                     get_team_id.ids[nm] = int(id_)
     return get_team_id.ids.get(name)
+
+
+# Returns the types of a move when requesting
+def get_move_type(move_id):
+    if not hasattr(get_move_type, 'info'):
+        get_move_type.info = {}
+        file_ = get_path('data/move_info.json')
+        with open(file_, 'r') as f:
+            j = json.loads(f.read())
+        for id_ in j:
+            get_move_type.info[int(id_)] = j[id_]['type']
+    return get_move_type.info.get(move_id, Unknown.SMALL)
 
 
 # Returns the damage of a move when requesting
