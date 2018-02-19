@@ -140,7 +140,7 @@ def parse_settings(root_path):
         action='append', default=[],
         help='Names of Manager processes to start.')
     parser.add_argument(
-        '-k', '--key', type=str, action='append', default=[],
+        '-k', '--key', type=str, action='append', default=[None],
         help='Specify a Google API Key to use.')
     parser.add_argument(
         '-f', '--filters', type=parse_unicode, action='append',
@@ -204,7 +204,7 @@ def parse_settings(root_path):
     config['DEBUG'] = args.debug
 
     # Check to make sure that the same number of arguments are included
-    for arg in [args.filters, args.alarms, args.geofences,
+    for arg in [args.filters, args.alarms, args.rules, args.geofences,
                 args.location, args.locale, args.units, args.cache_type,
                 args.timelimit, args.max_attempts,
                 args.timezone, args.stations]:
