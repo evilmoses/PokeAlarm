@@ -612,8 +612,8 @@ class Manager(object):
                 mon.custom_dts = f.custom_dts
                 if self.__quiet is False:
                     log.info("{} monster notification"
-                             " has been triggered in to {}!"
-                             "".format(mon.name, mon.geofence))
+                             " has been triggered in rule '{}' to {}!"
+                             "".format(mon.name, r_name, mon.geofence))
                 self._trigger_mon(mon, rule.alarm_names)
                 break  # Next rule
 
@@ -841,8 +841,8 @@ class Manager(object):
                 egg.custom_dts = f.custom_dts
                 if self.__quiet is False:
                     log.info("{} egg notification"
-                             " has been triggered to {}!"
-                             "".format(egg.gym_name, egg.geofence))
+                             " has been triggered in rule '{}' to {}!"
+                             "".format(egg.gym_name, r_name, egg.geofence))
                 self._trigger_egg(egg, rule.alarm_names)
                 break  # Next rule
 
@@ -924,8 +924,8 @@ class Manager(object):
                 raid.custom_dts = f.custom_dts
                 if self.__quiet is False:
                     log.info("{} raid notification"
-                             " has been triggered to {}!"
-                             "".format(raid.gym_name, raid.geofence))
+                             " has been triggered in rule '{}' to {}!"
+                             "".format(raid.gym_name, r_name, raid.geofence))
                 self._trigger_raid(raid, rule.alarm_names)
                 break  # Next rule
 
