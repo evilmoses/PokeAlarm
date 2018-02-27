@@ -73,6 +73,22 @@ class RaidFilter(BaseFilter):
             event_attribute='gym_name', eval_func=GymUtils.match_regex_dict,
             limit=BaseFilter.parse_as_set(
                 GymUtils.create_regex, 'gym_name_contains', data))
+        self.gym_name_excludes = self.evaluate_attribute(  # f.gn no-match e.gn
+            event_attribute='gym_name',
+            eval_func=GymUtils.not_match_regex_dict,
+            limit=BaseFilter.parse_as_set(
+                GymUtils.create_regex, 'gym_name_excludes', data))
+
+        # Gym sponsor
+        self.is_sponsor = self.evaluate_attribute(  # f.is_sponsor True
+            event_attribute='is_sponsor', eval_func=operator.eq,
+            limit=BaseFilter.parse_as_type(bool, 'is_sponsor', data))
+
+        # Gym park
+        self.park_contains = self.evaluate_attribute(  # f.gp matches e.gp
+            event_attribute='park', eval_func=GymUtils.match_regex_dict,
+            limit=BaseFilter.parse_as_set(
+                GymUtils.create_regex, 'park_contains', data))
 
         # Gym sponsor
         self.gym_sponsor_index_contains = self.evaluate_attribute(
@@ -138,7 +154,18 @@ class RaidFilter(BaseFilter):
 
         # Gym Name
         if self.gym_name_contains is not None:
-            settings['gym_name_matches'] = self.gym_name_contains
+            settings['gym_name_contains'] = self.gym_name_contains
+
+        if self.gym_name_excludes is not None:
+            settings['gym_name_excludes'] = self.gym_name_excludes
+
+        # Gym Sponsor
+        if self.is_sponsor is not None:
+            settings['is_sponsor'] = self.is_sponsor
+
+        # Gym Park
+        if self.park_contains is not None:
+            settings['park_contains'] = self.park_contains
 
         # Geofences
         if self.geofences is not None:
@@ -146,6 +173,6 @@ class RaidFilter(BaseFilter):
 
         # Missing Info
         if self.is_missing_info is not None:
-            settings['missing_info'] = self.is_missing_info
+            settings['is_missing_info'] = self.is_missing_info
 
         return settings
