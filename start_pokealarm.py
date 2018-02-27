@@ -236,7 +236,7 @@ def parse_settings(root_path):
                 args.cache_type, args.timelimit, args.max_attempts,
                 args.timezone, args.gmaps_rev_geocode, args.gmaps_dm_walk,
                 args.gmaps_dm_bike, args.gmaps_dm_drive,
-                args.gmaps_dm_transit]:
+                args.gmaps_dm_transit, args.stations]:
         if len(arg) > 1:  # Remove defaults from the list
             arg.pop(0)
         size = len(arg)

@@ -65,7 +65,7 @@ class EggEvent(BaseEvent):
         raid_end_time = get_time_as_str(self.raid_end, timezone)
         weather_name = locale.get_weather_name(self.weather_id)
 
-        exraid = self.gym_park
+        exraid = self.park
         if exraid == 'unknown':
             exraid = ''
         else:
@@ -111,7 +111,7 @@ class EggEvent(BaseEvent):
             'gym_image': self.gym_image,
             'sponsor_id': self.sponsor_id,
             'is_sponsor': self.is_sponsor,
-            'park': self.park,
+            'park': exraid,
             'team_id': self.current_team_id,
             'team_name': locale.get_team_name(self.current_team_id),
             'team_leader': locale.get_leader_name(self.current_team_id)
