@@ -41,6 +41,12 @@ class RaidEvent(BaseEvent):
         self.types = get_base_types(self.mon_id)
         self.boss_level = 20
 
+        # Form
+        self.form_id = check_for_none(int, data.get('form'), 0)
+
+        # Costume
+        self.costume_id = check_for_none(int, data.get('costume'), 0)
+
         # Weather Info
         self.weather_id = check_for_none(
             int, data.get('weather'), Unknown.TINY)
@@ -75,9 +81,10 @@ class RaidEvent(BaseEvent):
             str, data.get('description'), Unknown.REGULAR).strip()
         self.gym_image = check_for_none(
             str, data.get('url'), Unknown.REGULAR)
-        self.gym_sponsor = check_for_none(
-            int, data.get('sponsor'), Unknown.SMALL)
-        self.gym_park = check_for_none(
+        self.sponsor_id = check_for_none(
+            int, data.get('sponsor'), Unknown.TINY)
+        self.is_sponsor = True if self.sponsor_id > 0 else False
+        self.park = check_for_none(
             str, data.get('park'), Unknown.REGULAR)
 
         # Gym Team (this is only available from cache)
@@ -99,6 +106,9 @@ class RaidEvent(BaseEvent):
         else:
             exraid = "\n*Potential EX Raid (" + exraid + ")*"
 
+        form_name = locale.get_form_name(self.mon_id, self.form_id)
+        costume_name = locale.get_costume_name(
+            self.mon_id, self.costume_id)
         boosted_weather_name = locale.get_weather_name(self.boosted_weather_id)
         weather_name = locale.get_weather_name(self.weather_id)
 
@@ -130,6 +140,18 @@ class RaidEvent(BaseEvent):
                     get_type_emoji(self.types[0]),
                     get_type_emoji(self.types[1]))
                 if Unknown.is_not(type2) else get_type_emoji(self.types[0])),
+
+            # Form
+            'form': form_name,
+            'form_or_empty': Unknown.or_empty(form_name),
+            'form_id': self.form_id,
+            'form_id_3': "{:03d}".format(self.form_id),
+
+            # Costume
+            'costume': costume_name,
+            'costume_or_empty': Unknown.or_empty(costume_name),
+            'costume_id': self.costume_id,
+            'costume_id_3': "{:03d}".format(self.costume_id),
 
             # Location
             'lat': self.lat,
@@ -198,8 +220,9 @@ class RaidEvent(BaseEvent):
             'gym_name': self.gym_name,
             'gym_description': self.gym_description,
             'gym_image': self.gym_image,
-            'gym_sponsor': self.gym_sponsor,
-            'gym_park': exraid,
+            'sponsor_id': self.sponsor_id,
+            'is_sponsor': self.is_sponsor,
+            'park': self.park,
             'team_id': self.current_team_id,
             'team_name': locale.get_team_name(self.current_team_id),
             'team_leader': locale.get_leader_name(self.current_team_id)
