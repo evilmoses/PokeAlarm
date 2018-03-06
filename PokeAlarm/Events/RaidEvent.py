@@ -83,7 +83,6 @@ class RaidEvent(BaseEvent):
             str, data.get('url'), Unknown.REGULAR)
         self.sponsor_id = check_for_none(
             int, data.get('sponsor'), Unknown.TINY)
-        self.is_sponsor = True if self.sponsor_id > 0 else False
         self.park = check_for_none(
             str, data.get('park'), Unknown.REGULAR)
 
@@ -221,8 +220,10 @@ class RaidEvent(BaseEvent):
             'gym_description': self.gym_description,
             'gym_image': self.gym_image,
             'sponsor_id': self.sponsor_id,
-            'is_sponsor': self.is_sponsor,
             'park': exraid,
+            'sponsored':
+                self.sponsor_id > 0 if Unknown.is_not(self.sponsor_id)
+                else Unknown.REGULAR,
             'team_id': self.current_team_id,
             'team_name': locale.get_team_name(self.current_team_id),
             'team_leader': locale.get_leader_name(self.current_team_id)
