@@ -1,6 +1,5 @@
 # Standard Library Imports
 import operator
-import re
 # 3rd Party Imports
 # Local Imports
 from . import BaseFilter
@@ -21,6 +20,13 @@ class RaidFilter(BaseFilter):
             event_attribute='mon_id', eval_func=operator.contains,
             limit=BaseFilter.parse_as_set(
                 MonUtils.get_monster_id, 'monsters', data))
+
+        # Exclude Monster ID - f.monster_ids not contains r.ex_mon_id
+        self.exclude_mon_ids = self.evaluate_attribute(  #
+            event_attribute='mon_id',
+            eval_func=lambda d, v: not operator.contains(d, v),
+            limit=BaseFilter.parse_as_set(
+                MonUtils.get_monster_id, 'monsters_exclude', data))
 
         # Distance
         self.min_dist = self.evaluate_attribute(  # f.min_dist <= r.distance
@@ -80,9 +86,9 @@ class RaidFilter(BaseFilter):
                 GymUtils.create_regex, 'gym_name_excludes', data))
 
         # Gym sponsor
-        self.is_sponsor = self.evaluate_attribute(  # f.is_sponsor True
-            event_attribute='is_sponsor', eval_func=operator.eq,
-            limit=BaseFilter.parse_as_type(bool, 'is_sponsor', data))
+        self.sponsored = self.evaluate_attribute(  #
+            event_attribute='sponsor_id', eval_func=lambda y, x: (x > 0) == y,
+            limit=BaseFilter.parse_as_type(bool, 'sponsored', data))
 
         # Gym park
         self.park_contains = self.evaluate_attribute(  # f.gp matches e.gp
@@ -148,8 +154,8 @@ class RaidFilter(BaseFilter):
             settings['gym_name_excludes'] = self.gym_name_excludes
 
         # Gym Sponsor
-        if self.is_sponsor is not None:
-            settings['is_sponsor'] = self.is_sponsor
+        if self.sponsored is not None:
+            settings['sponsored'] = self.sponsored
 
         # Gym Park
         if self.park_contains is not None:

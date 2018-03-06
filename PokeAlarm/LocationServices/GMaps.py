@@ -1,6 +1,6 @@
 # Standard Library Imports
 import collections
-import datetime
+from datetime import datetime, timedelta
 import logging
 import time
 import json
@@ -25,7 +25,7 @@ class GMaps(object):
     # Maximum number of requests per second
     _queries_per_second = 50
     # How often to warn about going over query limit
-    _query_warning_window = datetime.timedelta(minutes=5)
+    _warning_window = timedelta(minutes=1)
 
     def __init__(self, api_key):
         self._key = itertools.cycle(api_key)
@@ -36,7 +36,7 @@ class GMaps(object):
 
         # Sliding window for rate limiting
         self._window = collections.deque(maxlen=self._queries_per_second)
-        self._time_limit = time.time()
+        self._time_limit = datetime.utcnow()
 
         # Memoization dicts
         self._geocode_hist = {}
@@ -79,7 +79,7 @@ class GMaps(object):
         if len(self._window) == self._queries_per_second:
             # Calculate elapsed time since start of window
             elapsed_time = time.time() - self._window[0]
-            if elapsed_time > 1:
+            if elapsed_time < 1:
                 # Sleep off the difference
                 time.sleep(1 - elapsed_time)
 
@@ -108,8 +108,8 @@ class GMaps(object):
         if body['status'] == "OK" or body['status'] == "ZERO_RESULTS":
             return body
         elif body['status'] == "OVER_QUERY_LIMIT":
-            self._time_limit = time.time() + datetime.timedelta(minutes=10)
-            raise UserWarning(u'API Limit reached.')
+            # self._time_limit = datetime.utcnow() + _warning_window
+            raise UserWarning(u'API Quota exceeded.')
         else:
             raise ValueError(u'Unexpected response status:\n {}'.format(body))
 

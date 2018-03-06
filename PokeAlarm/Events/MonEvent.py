@@ -44,7 +44,8 @@ class MonEvent(BaseEvent):
         self.weather_id = check_for_none(
             int, data.get('weather'), Unknown.TINY)
         self.boosted_weather_id = check_for_none(
-            int, data.get('boosted_weather'), 0)
+            int, data.get('boosted_weather')
+            or data.get('weather_boosted_condition'), 0)
 
         # Encounter Stats
         self.mon_lvl = check_for_none(
@@ -250,8 +251,24 @@ class MonEvent(BaseEvent):
 
             # Cosmetic
             'gender': self.gender,
-            'height': self.height,
-            'weight': self.weight,
+            'height_0': (
+                "{:.0f}".format(self.height) if Unknown.is_not(self.height)
+                else Unknown.TINY),
+            'height': (
+                "{:.1f}".format(self.height) if Unknown.is_not(self.height)
+                else Unknown.SMALL),
+            'height_2': (
+                "{:.2f}".format(self.height) if Unknown.is_not(self.height)
+                else Unknown.SMALL),
+            'weight_0': (
+                "{:.0f}".format(self.weight) if Unknown.is_not(self.weight)
+                else Unknown.TINY),
+            'weight': (
+                "{:.1f}".format(self.weight) if Unknown.is_not(self.weight)
+                else Unknown.SMALL),
+            'weight_2': (
+                "{:.2f}".format(self.weight) if Unknown.is_not(self.weight)
+                else Unknown.SMALL),
             'size': locale.get_size_name(self.size_id),
 
             # Attack rating
@@ -261,15 +278,42 @@ class MonEvent(BaseEvent):
                 Unknown.or_empty(self.def_grade, Unknown.TINY)),
 
             # Catch Prob
+            'base_catch_0': (
+                "{:.0f}".format(self.base_catch * 100)
+                if Unknown.is_not(self.base_catch)
+                else Unknown.TINY),
             'base_catch': (
                 "{:.1f}".format(self.base_catch * 100)
-                if Unknown.is_not(self.base_catch) else Unknown.SMALL),
+                if Unknown.is_not(self.base_catch)
+                else Unknown.SMALL),
+            'base_catch_2': (
+                "{:.2f}".format(self.base_catch * 100)
+                if Unknown.is_not(self.base_catch)
+                else Unknown.SMALL),
+            'great_catch_0': (
+                "{:.0f}".format(self.great_catch * 100)
+                if Unknown.is_not(self.great_catch)
+                else Unknown.TINY),
             'great_catch': (
                 "{:.1f}".format(self.great_catch * 100)
-                if Unknown.is_not(self.great_catch) else Unknown.SMALL),
+                if Unknown.is_not(self.great_catch)
+                else Unknown.SMALL),
+            'great_catch_2': (
+                "{:.2f}".format(self.great_catch * 100)
+                if Unknown.is_not(self.great_catch)
+                else Unknown.SMALL),
+            'ultra_catch_0': (
+                "{:.0f}".format(self.ultra_catch * 100)
+                if Unknown.is_not(self.ultra_catch)
+                else Unknown.TINY),
             'ultra_catch': (
                 "{:.1f}".format(self.ultra_catch * 100)
-                if Unknown.is_not(self.ultra_catch) else Unknown.SMALL),
+                if Unknown.is_not(self.ultra_catch)
+                else Unknown.SMALL),
+            'ultra_catch_2': (
+                "{:.2f}".format(self.ultra_catch * 100)
+                if Unknown.is_not(self.ultra_catch)
+                else Unknown.SMALL),
 
             # Misc
             'big_karp': (
