@@ -135,7 +135,7 @@ class MonEvent(BaseEvent):
         if self.cp != Unknown.TINY:
             cpiv = "IV: " + "{:.0f}".format(self.iv)  \
                 + "% CP: " + str(self.cp) \
-                + " Level: " + str(self.mon_lvl) 
+                + " Level: " + str(self.mon_lvl)
             movesetstats = "Moveset: " \
                 + locale.get_move_name(self.quick_id) + " / " \
                 + locale.get_move_name(self.charge_id) \
