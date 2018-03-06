@@ -130,15 +130,17 @@ class MonEvent(BaseEvent):
         else:
             form = " - " + form
         cpiv = ''
+        movesetstats = ''
         if self.cp != Unknown.TINY:
             cpiv = "IV: " + "{:.0f}".format(self.iv)  \
                 + "% CP: " + str(self.cp) \
-                + " Level: " + str(self.mon_lvl) + "\n" \
+                + " Level: " + str(self.mon_lvl) 
+            movesetstats = "Moveset: " \
                 + locale.get_move_name(self.quick_id) + " / " \
                 + locale.get_move_name(self.charge_id) \
                 + "\nAtt: " + str(self.atk_iv) \
                 + " Def: " + str(self.def_iv) \
-                + " Sta: " + str(self.sta_iv) + "\n"
+                + " Sta: " + str(self.sta_iv)
 
         costume_name = locale.get_costume_name(
             self.monster_id, self.costume_id)
@@ -201,6 +203,7 @@ class MonEvent(BaseEvent):
             'mon_lvl': self.mon_lvl,
             'cp': self.cp,
             'cpiv': cpiv,
+            'movesetstats': movesetstats,
 
             # IVs
             'iv_0': (
