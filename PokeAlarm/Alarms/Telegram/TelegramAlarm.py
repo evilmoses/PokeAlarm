@@ -36,7 +36,7 @@ class TelegramAlarm(Alarm):
             'message': "*A wild <mon_name> has appeared!*\n"
                        "Available until <24h_time> (<time_left>).",
             'sticker_url': get_image_url(
-                "telegram/monsters/<mon_id_3>_<form_id_3>.webp")
+                "telegram/monsters/<image_suffix>.webp")
         },
         'stops': {
             'message': "*Someone has placed a lure on a Pokestop!*\n"

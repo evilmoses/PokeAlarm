@@ -123,8 +123,9 @@ class MonEvent(BaseEvent):
     def generate_dts(self, locale, timezone, units):
         """ Return a dict with all the DTS for this event. """
         time = get_time_as_str(self.disappear_time, timezone)
-
         form_name = locale.get_form_name(self.monster_id, self.form_id)
+        form_id_3 = "{:03d}".format(self.form_id)
+        mon_id_3 = "{:03}".format(self.monster_id)
         costume_name = locale.get_costume_name(
             self.monster_id, self.costume_id)
 
@@ -140,7 +141,7 @@ class MonEvent(BaseEvent):
             'encounter_id': self.enc_id,
             'mon_name': locale.get_pokemon_name(self.monster_id),
             'mon_id': self.monster_id,
-            'mon_id_3': "{:03}".format(self.monster_id),
+            'mon_id_3': mon_id_3,
 
             # Time Remaining
             'time_left': time[0],
@@ -219,7 +220,7 @@ class MonEvent(BaseEvent):
             'form': form_name,
             'form_or_empty': Unknown.or_empty(form_name),
             'form_id': self.form_id,
-            'form_id_3': "{:03d}".format(self.form_id),
+            'form_id_3': form_id_3,
 
             # Costume
             'costume': costume_name,
@@ -321,6 +322,8 @@ class MonEvent(BaseEvent):
                 and self.weight >= 13.13 else ''),
             'tiny_rat': (
                 'tiny' if self.monster_id == 19 and Unknown.is_not(self.weight)
-                and self.weight <= 2.41 else '')
+                and self.weight <= 2.41 else ''),
+            'image_suffix': mon_id_3 + '_' +
+                '000' if self.monster_id == 132 else form_id_3
         })
         return dts

@@ -28,9 +28,9 @@ class DiscordAlarm(Alarm):
             'username': "<mon_name>",
             'content': "",
             'icon_url': get_image_url(
-                "regular/monsters/<mon_id_3>_<form_id_3>.png"),
+                "regular/monsters/<image_suffix>.png"),
             'avatar_url': get_image_url(
-                "regular/monsters/<mon_id_3>_<form_id_3>.png"),
+                "regular/monsters/<image_suffix>.png"),
             'title': "A wild <mon_name> has appeared!",
             'url': "<gmaps>",
             'body': "Available until <24h_time> (<time_left>)."
