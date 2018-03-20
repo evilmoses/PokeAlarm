@@ -119,7 +119,9 @@ class Locale(object):
 
     # Returns the name of the form of for the given Pokemon ID and Form ID
     def get_form_name(self, pokemon_id, form_id):
-        return self.__pokemon_names.get(form_id, 'unknown') if pokemon_id == 132 else self.__form_names.get(pokemon_id, {}).get(form_id, 'unknown') 
+        return self.__pokemon_names.get(form_id, 'unknown') if (
+            pokemon_id == 132) else self.__form_names.get(
+            pokemon_id, {}).get(form_id, 'unknown')
 
     # Returns the name of the costume for the given Pokemon ID and Costume ID
     def get_costume_name(self, pokemon_id, costume_id):
