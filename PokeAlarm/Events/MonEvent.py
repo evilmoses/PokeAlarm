@@ -126,6 +126,9 @@ class MonEvent(BaseEvent):
 
         time = get_time_as_str(self.disappear_time)
         form = locale.get_form_name(self.monster_id, self.form_id)
+        form_id_3 = "{:03d}".format(self.form_id)
+        mon_id_3 = "{:03}".format(self.monster_id)
+        
         if form == 'unknown':
             form = ''
         else:
@@ -158,7 +161,7 @@ class MonEvent(BaseEvent):
             'encounter_id': self.enc_id,
             'mon_name': locale.get_pokemon_name(self.monster_id),
             'mon_id': self.monster_id,
-            'mon_id_3': "{:03}".format(self.monster_id),
+            'mon_id_3': mon_id_3,
 
             # Time Remaining
             'time_left': time[0],
@@ -239,7 +242,7 @@ class MonEvent(BaseEvent):
             # Form
             'form': form,
             'form_id': self.form_id,
-            'form_id_3': "{:03d}".format(self.form_id),
+            'form_id_3': form_id_3,
 
             # Costume
             'costume': costume_name,
@@ -343,6 +346,7 @@ class MonEvent(BaseEvent):
             'tiny_rat': (
                 '\nA tiny Rattata has been found!' if self.monster_id == 19
                 and Unknown.is_not(self.weight)
-                and self.weight <= 2.41 else '')
+                and self.weight <= 2.41 else ''),
+            'image_suffix': mon_id_3 + '_' + form_id_3
         })
         return dts
