@@ -128,6 +128,7 @@ class MonEvent(BaseEvent):
         form = locale.get_form_name(self.monster_id, self.form_id)
         form_id_3 = "{:03d}".format(self.form_id)
         mon_id_3 = "{:03}".format(self.monster_id)
+        form_for_image = '000' if self.monster_id == 132 else form_id_3
 
         if form == 'unknown':
             form = ''
@@ -347,7 +348,7 @@ class MonEvent(BaseEvent):
                 '\nA tiny Rattata has been found!' if self.monster_id == 19
                 and Unknown.is_not(self.weight)
                 and self.weight <= 2.41 else ''),
-            'image_suffix': mon_id_3 + '_' +
-                '000' if self.monster_id == 132 else form_id_3
+            'image_suffix': mon_id_3 + '_' + form_for_image
+                
         })
         return dts

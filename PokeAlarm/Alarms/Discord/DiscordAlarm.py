@@ -165,7 +165,7 @@ class DiscordAlarm(Alarm):
             'body': settings.pop('body', default['body']),
             'map': static_map
         }
-
+            
         reject_leftover_parameters(settings, "'Alert level in Discord alarm.")
         return alert
 
