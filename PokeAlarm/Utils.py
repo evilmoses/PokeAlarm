@@ -372,9 +372,15 @@ def get_gmaps_link(lat, lng):
 
 # Returns a String link to Apple Maps Pin at the location
 def get_applemaps_link(lat, lng):
-    latlon = '{},{}'.format(repr(lat), repr(lng))
+    latlng = '{},{}'.format(repr(lat), repr(lng))
     return 'http://maps.apple.com/maps?' \
-           + 'daddr={}&z=10&t=s&dirflg=w'.format(latlon)
+           + 'daddr={}&z=10&t=s&dirflg=w'.format(latlng)
+
+
+# Returns a String link to Teleport to a location in PokeGo++2.0
+def get_pokego2_link(lat, lng, name, type):
+    deeplink = '{},{},{}'.format(repr(lat), repr(lng), str(name))
+    return 'https://pokego2.com/p.html?{}'.format(deeplink)
 
 
 # Returns a static map url with <lat> and <lng> parameters for dynamic test

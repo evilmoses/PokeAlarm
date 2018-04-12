@@ -1,7 +1,8 @@
 # Standard Library Imports
 # 3rd Party Imports
 # Local Imports
-from PokeAlarm.Utils import get_gmaps_link, get_applemaps_link, get_dist_as_str
+from PokeAlarm.Utils import get_gmaps_link, get_applemaps_link, get_pokego2_link, \
+    get_dist_as_str
 from . import BaseEvent
 from PokeAlarm import Unknown
 
@@ -65,6 +66,7 @@ class GymEvent(BaseEvent):
             'direction': self.direction,
             'gmaps': get_gmaps_link(self.lat, self.lng),
             'applemaps': get_applemaps_link(self.lat, self.lng),
+            'pokego2': get_pokego2_link(self.lat, self.lng, self.gym_name),
             'geofence': self.geofence,
 
             # Team Info
