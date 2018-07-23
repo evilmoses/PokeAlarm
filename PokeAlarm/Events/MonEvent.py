@@ -349,6 +349,6 @@ class MonEvent(BaseEvent):
                 and Unknown.is_not(self.weight)
                 and self.weight <= 2.41 else ''),
             'image_suffix': mon_id_3 + '_' + form_for_image
-                
+
         })
         return dts

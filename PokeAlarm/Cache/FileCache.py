@@ -42,6 +42,7 @@ class FileCache(Cache):
                 self._gym_name = data.get('gym_name', {})
                 self._gym_desc = data.get('gym_desc', {})
                 self._gym_image = data.get('gym_image', {})
+                self._reward = data.get('gym_image', {})
 
                 log.debug("Cache loaded successfully.")
         except Exception as e:
@@ -61,7 +62,8 @@ class FileCache(Cache):
             'gym_team': self._gym_team,
             'gym_name': self._gym_name,
             'gym_desc': self._gym_desc,
-            'gym_image': self._gym_image
+            'gym_image': self._gym_image,
+            'reward': self._reward
         }
         try:
             # Write to temporary file and then rename
