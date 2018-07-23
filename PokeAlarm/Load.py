@@ -49,6 +49,8 @@ def parse_rules_file(manager, filename):
         load_rules_section(manager.add_raid_rule, rules.pop('raids', {}))
         log.debug("Parsing 'weather' section.")
         load_rules_section(manager.add_weather_rule, rules.pop('weather', {}))
+        log.debug("Parsing 'quest' section.")
+        load_rules_section(manager.add_quest_rule, rules.pop('quest', {}))
 
         for key in rules:
             raise ValueError("Unknown Event type '{}'. Rules must be defined "

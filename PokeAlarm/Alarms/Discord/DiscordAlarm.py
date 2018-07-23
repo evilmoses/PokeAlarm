@@ -86,7 +86,16 @@ class DiscordAlarm(Alarm):
             'url': None,
             'body': "At <12h_time_weather_changed>, weather in "
                     "<geofence> became <weather>",
-        }
+        },
+        'quest': {
+            'username': "Quest",
+            'content': "",
+            'icon_url': None,
+            'avatar_url': None,
+            'title': "New Quest Found!",
+            'url': "<gmaps>",
+            'body': "Quest will expire at midnight."
+        },
     }
 
     # Gather settings and create alarm
@@ -119,6 +128,8 @@ class DiscordAlarm(Alarm):
             settings.pop('raids', {}), self._defaults['raids'], 'raids')
         self.__weather = self.create_alert_settings(
             settings.pop('weather', {}), self._defaults['weather'], 'weather')
+        self.__quest = self.create_alert_settings(
+            settings.pop('quest', {}), self._defaults['quest'], 'quest')
 
         # Warn user about leftover parameters
         reject_leftover_parameters(settings, "'Alarm level in Discord alarm.")
@@ -238,6 +249,10 @@ class DiscordAlarm(Alarm):
     def weather_alert(self, weather_info):
         log.debug("Weather notification triggered.")
         self.send_alert(self.__weather, weather_info)
+
+    def quest_alert(self, quest_info):
+        log.debug("Quest notification triggered.")
+        self.send_alert(self.__quest, quest_info)
 
     # Send a payload to the webhook url
     def send_webhook(self, url, payload):
