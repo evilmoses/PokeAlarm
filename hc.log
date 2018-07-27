@@ -1,0 +1,232 @@
+2018-07-27 09:58:17,881 [    MainProcess][shapely.sp][    INFO] Numpy was not imported, continuing without requires()
+2018-07-27 09:58:17,930 [    MainProcess][    Server][    INFO] PokeAlarm is getting ready...
+2018-07-27 09:58:17,935 [    MainProcess][    Server][    INFO] Europe/London
+2018-07-27 09:58:17,947 [    MainProcess][   Manager][    INFO] ----------- Manager 'hc'  is being created.
+2018-07-27 09:58:17,950 [    MainProcess][   Manager][ WARNING] NO LOCATION SET -  this may cause issues with distance related DTS.
+2018-07-27 09:58:17,983 [    MainProcess][   Manager][    INFO] Loading Filters from file at /home/scanbot/PokeAlarm/filters_HC.json
+2018-07-27 09:58:17,992 [    MainProcess][   Manager][    INFO] Parsing 'monsters' section.
+2018-07-27 09:58:18,032 [    MainProcess][   Manager][    INFO] Parsing 'stops' section.
+2018-07-27 09:58:18,033 [    MainProcess][   Manager][    INFO] Parsing 'gyms' section.
+2018-07-27 09:58:18,033 [    MainProcess][   Manager][    INFO] Parsing 'eggs' section.
+2018-07-27 09:58:18,034 [    MainProcess][   Manager][    INFO] Parsing 'raids' section.
+2018-07-27 09:58:18,035 [    MainProcess][   Manager][    INFO] Parsing 'weather' section.
+2018-07-27 09:58:18,036 [    MainProcess][   Manager][    INFO] Parsing 'quest' section.
+2018-07-27 09:58:18,038 [    MainProcess][  Geofence][    INFO] Geofence Pinner added.
+2018-07-27 09:58:18,038 [    MainProcess][  Geofence][    INFO] Geofence Eastcote added.
+2018-07-27 09:58:18,038 [    MainProcess][  Geofence][    INFO] Geofence West Harrow added.
+2018-07-27 09:58:18,038 [    MainProcess][  Geofence][    INFO] Geofence Rayners Lane added.
+2018-07-27 09:58:18,038 [    MainProcess][  Geofence][    INFO] Geofence North Harrow added.
+2018-07-27 09:58:18,038 [    MainProcess][  Geofence][    INFO] Geofence Hatch End added.
+2018-07-27 09:58:18,039 [    MainProcess][  Geofence][    INFO] Geofence Headstone added.
+2018-07-27 09:58:18,039 [    MainProcess][  Geofence][    INFO] Geofence Wealdstone added.
+2018-07-27 09:58:18,039 [    MainProcess][  Geofence][    INFO] Geofence Harrow On The Hill added.
+2018-07-27 09:58:18,039 [    MainProcess][  Geofence][    INFO] Geofence Kenton added.
+2018-07-27 09:58:18,039 [    MainProcess][  Geofence][    INFO] Geofence Harrow added.
+2018-07-27 09:58:18,039 [    MainProcess][  Geofence][    INFO] Geofence Stanmore added.
+2018-07-27 09:58:18,040 [    MainProcess][  Geofence][    INFO] Geofence South Harrow added.
+2018-07-27 09:58:18,040 [    MainProcess][  Geofence][    INFO] Geofence Sudbury Hill added.
+2018-07-27 09:58:18,040 [    MainProcess][  Geofence][    INFO] Geofence Northolt added.
+2018-07-27 09:58:18,040 [    MainProcess][  Geofence][    INFO] Geofence Harrow Weald added.
+2018-07-27 09:58:18,040 [    MainProcess][  Geofence][    INFO] Geofence Coulsdon added.
+2018-07-27 09:58:18,040 [    MainProcess][  Geofence][    INFO] Geofence Chipstead added.
+2018-07-27 09:58:18,040 [    MainProcess][  Geofence][    INFO] Geofence Central Croydon added.
+2018-07-27 09:58:18,041 [    MainProcess][  Geofence][    INFO] Geofence Addiscombe added.
+2018-07-27 09:58:18,041 [    MainProcess][  Geofence][    INFO] Geofence Addington added.
+2018-07-27 09:58:18,041 [    MainProcess][  Geofence][    INFO] Geofence Beddington added.
+2018-07-27 09:58:18,041 [    MainProcess][  Geofence][    INFO] Geofence Whyteleaf added.
+2018-07-27 09:58:18,041 [    MainProcess][  Geofence][    INFO] Geofence Waddon added.
+2018-07-27 09:58:18,041 [    MainProcess][  Geofence][    INFO] Geofence Thornton Heath added.
+2018-07-27 09:58:18,041 [    MainProcess][  Geofence][    INFO] Geofence South Croydon added.
+2018-07-27 09:58:18,041 [    MainProcess][  Geofence][    INFO] Geofence South Beddington added.
+2018-07-27 09:58:18,041 [    MainProcess][  Geofence][    INFO] Geofence Shirley added.
+2018-07-27 09:58:18,042 [    MainProcess][  Geofence][    INFO] Geofence Selsdon added.
+2018-07-27 09:58:18,042 [    MainProcess][  Geofence][    INFO] Geofence Selhurst added.
+2018-07-27 09:58:18,042 [    MainProcess][  Geofence][    INFO] Geofence Purley added.
+2018-07-27 09:58:18,042 [    MainProcess][  Geofence][    INFO] Geofence Old Coulsdon added.
+2018-07-27 09:58:18,042 [    MainProcess][  Geofence][    INFO] Geofence Norbury added.
+2018-07-27 09:58:18,042 [    MainProcess][  Geofence][    INFO] Geofence Mitcham added.
+2018-07-27 09:58:18,042 [    MainProcess][  Geofence][    INFO] Geofence Kenley added.
+2018-07-27 09:58:18,042 [    MainProcess][  Geofence][    INFO] Geofence Hackbridge added.
+2018-07-27 09:58:18,042 [    MainProcess][  Geofence][    INFO] Geofence Croydon added.
+2018-07-27 09:58:18,043 [    MainProcess][  Geofence][    INFO] Geofence Carshalton On The Hill added.
+2018-07-27 09:58:18,043 [    MainProcess][  Geofence][    INFO] Geofence Carshalton added.
+2018-07-27 09:58:18,043 [    MainProcess][  Geofence][    INFO] Geofence Carshalton Beeches added.
+2018-07-27 09:58:18,043 [    MainProcess][  Geofence][    INFO] Geofence St Helier added.
+2018-07-27 09:58:18,043 [    MainProcess][  Geofence][    INFO] Geofence Sutton added.
+2018-07-27 09:58:18,043 [    MainProcess][  Geofence][    INFO] Geofence Belmont added.
+2018-07-27 09:58:18,044 [    MainProcess][  Geofence][    INFO] Geofence Benhilton added.
+2018-07-27 09:58:18,044 [    MainProcess][  Geofence][    INFO] Geofence Sydenham added.
+2018-07-27 09:58:18,044 [    MainProcess][  Geofence][    INFO] Geofence Dulwich added.
+2018-07-27 09:58:18,044 [    MainProcess][  Geofence][    INFO] Geofence West Norwood added.
+2018-07-27 09:58:18,044 [    MainProcess][  Geofence][    INFO] Geofence Norwood added.
+2018-07-27 09:58:18,044 [    MainProcess][  Geofence][    INFO] Geofence Forest Hill added.
+2018-07-27 09:58:18,044 [    MainProcess][  Geofence][    INFO] Geofence Penge added.
+2018-07-27 09:58:18,044 [    MainProcess][  Geofence][    INFO] Geofence West Wickham added.
+2018-07-27 09:58:18,044 [    MainProcess][  Geofence][    INFO] Geofence Beckenham added.
+2018-07-27 09:58:18,045 [    MainProcess][  Geofence][    INFO] Geofence Bellingham added.
+2018-07-27 09:58:18,045 [    MainProcess][  Geofence][    INFO] Geofence Catford added.
+2018-07-27 09:58:18,045 [    MainProcess][  Geofence][    INFO] Geofence Hither Green added.
+2018-07-27 09:58:18,045 [    MainProcess][  Geofence][    INFO] Geofence Crofton Park added.
+2018-07-27 09:58:18,045 [    MainProcess][  Geofence][    INFO] Geofence Ladywell added.
+2018-07-27 09:58:18,045 [    MainProcess][  Geofence][    INFO] Geofence Grove Park added.
+2018-07-27 09:58:18,045 [    MainProcess][  Geofence][    INFO] Geofence Mottingham added.
+2018-07-27 09:58:18,045 [    MainProcess][  Geofence][    INFO] Geofence Downham added.
+2018-07-27 09:58:18,046 [    MainProcess][  Geofence][    INFO] Geofence Sundridge added.
+2018-07-27 09:58:18,046 [    MainProcess][  Geofence][    INFO] Geofence Sidcup added.
+2018-07-27 09:58:18,046 [    MainProcess][  Geofence][    INFO] Geofence Chislehurst added.
+2018-07-27 09:58:18,046 [    MainProcess][  Geofence][    INFO] Geofence New Eltham added.
+2018-07-27 09:58:18,046 [    MainProcess][  Geofence][    INFO] Geofence Elmstead added.
+2018-07-27 09:58:18,046 [    MainProcess][  Geofence][    INFO] Geofence Bromley added.
+2018-07-27 09:58:18,046 [    MainProcess][  Geofence][    INFO] Geofence Keston added.
+2018-07-27 09:58:18,046 [    MainProcess][  Geofence][    INFO] Geofence Thame added.
+2018-07-27 09:58:18,046 [    MainProcess][  Geofence][    INFO] Geofence Hayes added.
+2018-07-27 09:58:18,047 [    MainProcess][  Geofence][    INFO] Geofence West Drayton added.
+2018-07-27 09:58:18,047 [    MainProcess][  Geofence][    INFO] Geofence Uxbridge added.
+2018-07-27 09:58:18,047 [    MainProcess][  Geofence][    INFO] Geofence Ickenham added.
+2018-07-27 09:58:18,047 [    MainProcess][  Geofence][    INFO] Geofence West Ruislip added.
+2018-07-27 09:58:18,047 [    MainProcess][  Geofence][    INFO] Geofence Ruislip added.
+2018-07-27 09:58:18,047 [    MainProcess][  Geofence][    INFO] Geofence South Ruislip added.
+2018-07-27 09:58:18,047 [    MainProcess][  Geofence][    INFO] Geofence Northwood Hills added.
+2018-07-27 09:58:18,047 [    MainProcess][  Geofence][    INFO] Geofence Ruislip Manor added.
+2018-07-27 09:58:18,048 [    MainProcess][  Geofence][    INFO] Geofence Caversham added.
+2018-07-27 09:58:18,048 [    MainProcess][  Geofence][    INFO] Geofence Sonning Common added.
+2018-07-27 09:58:18,048 [    MainProcess][  Geofence][    INFO] Geofence Henley added.
+2018-07-27 09:58:18,048 [    MainProcess][  Geofence][    INFO] Geofence Hurst added.
+2018-07-27 09:58:18,048 [    MainProcess][  Geofence][    INFO] Geofence Twyford added.
+2018-07-27 09:58:18,048 [    MainProcess][  Geofence][    INFO] Geofence Woodley added.
+2018-07-27 09:58:18,048 [    MainProcess][  Geofence][    INFO] Geofence Winnersh added.
+2018-07-27 09:58:18,048 [    MainProcess][  Geofence][    INFO] Geofence Earley added.
+2018-07-27 09:58:18,048 [    MainProcess][  Geofence][    INFO] Geofence Reading added.
+2018-07-27 09:58:18,049 [    MainProcess][  Geofence][    INFO] Geofence Tilehurst added.
+2018-07-27 09:58:18,049 [    MainProcess][  Geofence][    INFO] Geofence Calcot added.
+2018-07-27 09:58:18,049 [    MainProcess][  Geofence][    INFO] Geofence Theale added.
+2018-07-27 09:58:18,049 [    MainProcess][  Geofence][    INFO] Geofence Wokingham added.
+2018-07-27 09:58:18,049 [    MainProcess][  Geofence][    INFO] Geofence Binfield added.
+2018-07-27 09:58:18,049 [    MainProcess][  Geofence][    INFO] Geofence Bracknell added.
+2018-07-27 09:58:18,049 [    MainProcess][  Geofence][    INFO] Geofence North Ascot added.
+2018-07-27 09:58:18,049 [    MainProcess][  Geofence][    INFO] Geofence Ascot added.
+2018-07-27 09:58:18,049 [    MainProcess][  Geofence][    INFO] Geofence Gardeners Green added.
+2018-07-27 09:58:18,049 [    MainProcess][  Geofence][    INFO] Geofence Arborfield added.
+2018-07-27 09:58:18,050 [    MainProcess][  Geofence][    INFO] Geofence Maidenhead added.
+2018-07-27 09:58:18,050 [    MainProcess][  Geofence][    INFO] Geofence Eton added.
+2018-07-27 09:58:18,050 [    MainProcess][  Geofence][    INFO] Geofence Windsor added.
+2018-07-27 09:58:18,050 [    MainProcess][  Geofence][    INFO] Geofence Burnham added.
+2018-07-27 09:58:18,050 [    MainProcess][  Geofence][    INFO] Geofence Farnham Common added.
+2018-07-27 09:58:18,050 [    MainProcess][  Geofence][    INFO] Geofence Stoke Poges added.
+2018-07-27 09:58:18,050 [    MainProcess][  Geofence][    INFO] Geofence Britwell added.
+2018-07-27 09:58:18,050 [    MainProcess][  Geofence][    INFO] Geofence Wexham added.
+2018-07-27 09:58:18,051 [    MainProcess][  Geofence][    INFO] Geofence Datchet added.
+2018-07-27 09:58:18,051 [    MainProcess][  Geofence][    INFO] Geofence Langley added.
+2018-07-27 09:58:18,051 [    MainProcess][  Geofence][    INFO] Geofence Richings Park added.
+2018-07-27 09:58:18,051 [    MainProcess][  Geofence][    INFO] Geofence Colnbrook added.
+2018-07-27 09:58:18,051 [    MainProcess][  Geofence][    INFO] Geofence Slough added.
+2018-07-27 09:58:18,051 [    MainProcess][  Geofence][    INFO] Geofence Kennington added.
+2018-07-27 09:58:18,051 [    MainProcess][  Geofence][    INFO] Geofence Headington added.
+2018-07-27 09:58:18,051 [    MainProcess][  Geofence][    INFO] Geofence Cowley added.
+2018-07-27 09:58:18,051 [    MainProcess][  Geofence][    INFO] Geofence Botley added.
+2018-07-27 09:58:18,051 [    MainProcess][  Geofence][    INFO] Geofence Summertown added.
+2018-07-27 09:58:18,052 [    MainProcess][  Geofence][    INFO] Geofence Oxford added.
+2018-07-27 09:58:18,052 [    MainProcess][  Geofence][    INFO] Geofence Bicester added.
+2018-07-27 09:58:18,052 [    MainProcess][  Geofence][    INFO] Geofence Kidlington added.
+2018-07-27 09:58:18,052 [    MainProcess][  Geofence][    INFO] Geofence Abingdon added.
+2018-07-27 09:58:18,052 [    MainProcess][  Geofence][    INFO] Geofence Radley added.
+2018-07-27 09:58:18,052 [    MainProcess][  Geofence][    INFO] Geofence Didcot added.
+2018-07-27 09:58:18,052 [    MainProcess][  Geofence][    INFO] Geofence East Hendred added.
+2018-07-27 09:58:18,052 [    MainProcess][  Geofence][    INFO] Geofence Ardington added.
+2018-07-27 09:58:18,052 [    MainProcess][  Geofence][    INFO] Geofence Wantage added.
+2018-07-27 09:58:18,052 [    MainProcess][  Geofence][    INFO] Geofence Stanford In The Vale added.
+2018-07-27 09:58:18,053 [    MainProcess][  Geofence][    INFO] Geofence Faringdon added.
+2018-07-27 09:58:18,053 [    MainProcess][  Geofence][    INFO] Geofence Blewbury added.
+2018-07-27 09:58:18,053 [    MainProcess][  Geofence][    INFO] Geofence Chilton added.
+2018-07-27 09:58:18,053 [    MainProcess][  Geofence][    INFO] Geofence Merrow added.
+2018-07-27 09:58:18,053 [    MainProcess][  Geofence][    INFO] Geofence Guildford added.
+2018-07-27 09:58:18,053 [    MainProcess][  Geofence][    INFO] Geofence Stoughton added.
+2018-07-27 09:58:18,053 [    MainProcess][  Geofence][    INFO] Geofence Wood Street added.
+2018-07-27 09:58:18,053 [    MainProcess][  Geofence][    INFO] Geofence Thatcham added.
+2018-07-27 09:58:18,053 [    MainProcess][  Geofence][    INFO] Geofence Wash Common added.
+2018-07-27 09:58:18,054 [    MainProcess][  Geofence][    INFO] Geofence Greenham added.
+2018-07-27 09:58:18,054 [    MainProcess][  Geofence][    INFO] Geofence Donnington added.
+2018-07-27 09:58:18,054 [    MainProcess][  Geofence][    INFO] Geofence Shaw added.
+2018-07-27 09:58:18,054 [    MainProcess][  Geofence][    INFO] Geofence Newbury added.
+2018-07-27 09:58:18,054 [    MainProcess][  Geofence][    INFO] Geofence Cold Ash added.
+2018-07-27 09:58:18,054 [    MainProcess][  Geofence][    INFO] Geofence Upper Bucklebury added.
+2018-07-27 09:58:18,054 [    MainProcess][  Geofence][    INFO] Geofence Kintbury added.
+2018-07-27 09:58:18,054 [    MainProcess][  Geofence][    INFO] Geofence Hungerford added.
+2018-07-27 09:58:18,054 [    MainProcess][  Geofence][    INFO] Geofence Stock Cross added.
+2018-07-27 09:58:18,054 [    MainProcess][  Geofence][    INFO] Geofence Aldermaston added.
+2018-07-27 09:58:18,055 [    MainProcess][  Geofence][    INFO] Geofence White Bushes added.
+2018-07-27 09:58:18,055 [    MainProcess][  Geofence][    INFO] Geofence Merstham added.
+2018-07-27 09:58:18,055 [    MainProcess][  Geofence][    INFO] Geofence Reigate added.
+2018-07-27 09:58:18,055 [    MainProcess][  Geofence][    INFO] Geofence Redhill added.
+2018-07-27 09:58:18,055 [    MainProcess][  Geofence][    INFO] Geofence Ashstead added.
+2018-07-27 09:58:18,055 [    MainProcess][  Geofence][    INFO] Geofence Leatherhead added.
+2018-07-27 09:58:18,055 [    MainProcess][  Geofence][    INFO] Geofence Great Bookham added.
+2018-07-27 09:58:18,055 [    MainProcess][  Geofence][    INFO] Geofence Dorking added.
+2018-07-27 09:58:18,055 [    MainProcess][  Geofence][    INFO] Geofence Woking added.
+2018-07-27 09:58:18,056 [    MainProcess][  Geofence][    INFO] Geofence West Byfleet added.
+2018-07-27 09:58:18,056 [    MainProcess][  Geofence][    INFO] Geofence Brookwood added.
+2018-07-27 09:58:18,056 [    MainProcess][  Geofence][    INFO] Geofence Send added.
+2018-07-27 09:58:18,056 [    MainProcess][  Geofence][    INFO] Geofence Ripley added.
+2018-07-27 09:58:18,056 [    MainProcess][  Geofence][    INFO] Geofence Chobham added.
+2018-07-27 09:58:18,056 [    MainProcess][  Geofence][    INFO] Geofence Byfleet added.
+2018-07-27 09:58:18,056 [    MainProcess][  Geofence][    INFO] Geofence Egham added.
+2018-07-27 09:58:18,056 [    MainProcess][  Geofence][    INFO] Geofence Staines added.
+2018-07-27 09:58:18,056 [    MainProcess][  Geofence][    INFO] Geofence Englefield Green added.
+2018-07-27 09:58:18,057 [    MainProcess][  Geofence][    INFO] Geofence Chertsey added.
+2018-07-27 09:58:18,057 [    MainProcess][  Geofence][    INFO] Geofence Weybridge added.
+2018-07-27 09:58:18,057 [    MainProcess][  Geofence][    INFO] Geofence Walton-On-Thames added.
+2018-07-27 09:58:18,057 [    MainProcess][  Geofence][    INFO] Geofence Molesley added.
+2018-07-27 09:58:18,057 [    MainProcess][  Geofence][    INFO] Geofence Ashford added.
+2018-07-27 09:58:18,057 [    MainProcess][  Geofence][    INFO] Geofence Addlestone added.
+2018-07-27 09:58:18,057 [    MainProcess][  Geofence][    INFO] Geofence Farnham added.
+2018-07-27 09:58:18,057 [    MainProcess][  Geofence][    INFO] Geofence Wrecclesham added.
+2018-07-27 09:58:18,057 [    MainProcess][  Geofence][    INFO] Geofence Aldershot added.
+2018-07-27 09:58:18,058 [    MainProcess][  Geofence][    INFO] Geofence Sandhurst added.
+2018-07-27 09:58:18,058 [    MainProcess][  Geofence][    INFO] Geofence Farnborough added.
+2018-07-27 09:58:18,058 [    MainProcess][  Geofence][    INFO] Geofence Camberley added.
+2018-07-27 09:58:18,058 [    MainProcess][  Geofence][    INFO] Geofence Crowthorne added.
+2018-07-27 09:58:18,058 [    MainProcess][  Geofence][    INFO] Geofence Yateley added.
+2018-07-27 09:58:18,058 [    MainProcess][  Geofence][    INFO] Geofence Bagshot added.
+2018-07-27 09:58:18,058 [    MainProcess][  Geofence][    INFO] Geofence Fleet added.
+2018-07-27 09:58:18,058 [    MainProcess][  Geofence][    INFO] Geofence Basingstoke added.
+2018-07-27 09:58:18,058 [    MainProcess][  Geofence][    INFO] Geofence Tadley added.
+2018-07-27 09:58:18,059 [    MainProcess][  Geofence][    INFO] Geofence Andwell added.
+2018-07-27 09:58:18,059 [    MainProcess][  Geofence][    INFO] Geofence Odiham added.
+2018-07-27 09:58:18,059 [    MainProcess][  Geofence][    INFO] Geofence Chineham added.
+2018-07-27 09:58:18,059 [    MainProcess][  Geofence][    INFO] Geofence North Waltham added.
+2018-07-27 09:58:18,059 [    MainProcess][  Geofence][    INFO] Geofence Kingsclere added.
+2018-07-27 09:58:18,059 [    MainProcess][  Geofence][    INFO] Geofence Witney added.
+2018-07-27 09:58:18,059 [    MainProcess][  Geofence][    INFO] Geofence Carterton added.
+2018-07-27 09:58:18,059 [    MainProcess][  Geofence][    INFO] Geofence Bampton added.
+2018-07-27 09:58:18,059 [    MainProcess][  Geofence][    INFO] Geofence Minster Lovell added.
+2018-07-27 09:58:18,059 [    MainProcess][  Geofence][    INFO] Geofence Eynsham added.
+2018-07-27 09:58:18,060 [    MainProcess][  Geofence][    INFO] Geofence Beaconsfield added.
+2018-07-27 09:58:18,060 [    MainProcess][  Geofence][    INFO] Geofence Holmer Green added.
+2018-07-27 09:58:18,060 [    MainProcess][  Geofence][    INFO] Geofence Amersham added.
+2018-07-27 09:58:18,060 [    MainProcess][  Geofence][    INFO] Geofence Hazlemere added.
+2018-07-27 09:58:18,060 [    MainProcess][  Geofence][    INFO] Geofence Flackwell Heath added.
+2018-07-27 09:58:18,060 [    MainProcess][  Geofence][    INFO] Geofence Bourne End added.
+2018-07-27 09:58:18,060 [    MainProcess][  Geofence][    INFO] Geofence High Wycombe added.
+2018-07-27 09:58:18,060 [    MainProcess][  Geofence][    INFO] Geofence Marlow added.
+2018-07-27 09:58:18,060 [    MainProcess][  Geofence][    INFO] Geofence Gerrards Cross added.
+2018-07-27 09:58:18,061 [    MainProcess][  Geofence][    INFO] Geofence Great Missenden added.
+2018-07-27 09:58:18,061 [    MainProcess][  Geofence][    INFO] Geofence Great Kingshill added.
+2018-07-27 09:58:18,061 [    MainProcess][  Geofence][    INFO] Geofence Old Windsor added.
+2018-07-27 09:58:18,061 [    MainProcess][  Geofence][    INFO] Geofence Tidmarsh added.
+2018-07-27 09:58:18,061 [    MainProcess][  Geofence][    INFO] Geofence Burghfield Common added.
+2018-07-27 09:58:18,061 [    MainProcess][  Geofence][    INFO] Geofence Mortimer Common added.
+2018-07-27 09:58:18,061 [    MainProcess][  Geofence][    INFO] Geofence Hughenden Valley added.
+2018-07-27 09:58:18,061 [    MainProcess][  Geofence][    INFO] Geofence Oakley added.
+2018-07-27 09:58:18,061 [    MainProcess][  Geofence][    INFO] Geofence Cranford added.
+2018-07-27 09:58:18,061 [    MainProcess][  Geofence][    INFO] Geofence Feltham added.
+2018-07-27 09:58:18,062 [    MainProcess][  Geofence][    INFO] Geofence Sunbury-On-Thames added.
+2018-07-27 09:58:18,062 [    MainProcess][  Geofence][    INFO] Geofence Pyrford added.
+2018-07-27 09:58:18,062 [    MainProcess][  Geofence][    INFO] Geofence Wisley added!
+2018-07-27 09:58:18,062 [    MainProcess][   Manager][    INFO] Loading Alarms from the file at /home/scanbot/PokeAlarm/alarms.json
+2018-07-27 09:58:18,063 [    MainProcess][   Discord][    INFO] Discord Alarm has been created!
+2018-07-27 09:58:18,063 [    MainProcess][   Discord][    INFO] Discord Alarm has been created!
+2018-07-27 09:58:18,063 [    MainProcess][   Manager][    INFO] 2 active alarms found.
+2018-07-27 09:58:18,063 [    MainProcess][   Manager][    INFO] ----------- Manager 'hc'  successfully created.
+2018-07-27 09:58:18,063 [    MainProcess][LoadConfig][    INFO] Loading Rules from file at /home/scanbot/PokeAlarm/rules_HC.json
+2018-07-27 09:58:18,065 [    MainProcess][    Server][    INFO] Starting up the Managers
+2018-07-27 09:58:18,065 [    MainProcess][    Server][    INFO] PokeAlarm is listening for webhooks on: http://127.0.0.1:4002

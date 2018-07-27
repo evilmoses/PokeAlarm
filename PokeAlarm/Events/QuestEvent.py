@@ -1,4 +1,5 @@
 # Standard Library Imports
+import datetime
 # 3rd Party Imports
 # Local Imports
 from PokeAlarm import Unknown
@@ -35,6 +36,7 @@ class QuestEvent(BaseEvent):
         # Quest Details
         self.quest = data['quest']
         self.reward = data['reward']
+        self.expiry = datetime.datetime.now().strftime("%d/%m/%Y 23:59")
 
     def generate_dts(self, locale, timezone, units):
         """ Return a dict with all the DTS for this event. """
@@ -58,6 +60,7 @@ class QuestEvent(BaseEvent):
             'geofence': self.geofence,
             # Quest Details
             'quest': self.quest,
-            'reward': self.reward
+            'reward': self.reward,
+            'expiry': self.expiry
         })
         return dts
