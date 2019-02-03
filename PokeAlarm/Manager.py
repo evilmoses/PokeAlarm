@@ -823,7 +823,7 @@ class Manager(object):
         # Skip if previously processed
         if self.__cache.egg_expiration(egg.gym_id) is not None:
             log.debug("Egg {} was skipped because it was previously "
-                      "processed.".format(egg.name))
+                      "processed.".format(egg.gym_name))
             return
         self.__cache.egg_expiration(egg.gym_id, egg.hatch_time)
 
@@ -831,7 +831,7 @@ class Manager(object):
         seconds_left = (egg.hatch_time - datetime.utcnow()).total_seconds()
         if seconds_left < self.__time_limit:
             log.debug("Egg {} was skipped because only {} seconds remained"
-                      "".format(egg.name, seconds_left))
+                      "".format(egg.gym_name, seconds_left))
             return
 
         # Calculate distance and direction
@@ -911,7 +911,7 @@ class Manager(object):
         # Skip if previously processed
         if self.__cache.raid_expiration(raid.gym_id) is not None:
             log.debug("Raid {} was skipped because it was previously "
-                      "processed.".format(raid.name))
+                      "processed.".format(raid.gym_name))
             return
         self.__cache.raid_expiration(raid.gym_id, raid.raid_end)
 
@@ -919,7 +919,7 @@ class Manager(object):
         seconds_left = (raid.raid_end - datetime.utcnow()).total_seconds()
         if seconds_left < self.__time_limit:
             log.debug("Raid {} was skipped because only {} seconds remained"
-                      "".format(raid.name, seconds_left))
+                      "".format(raid.gym_name, seconds_left))
             return
 
         # Calculate distance and direction

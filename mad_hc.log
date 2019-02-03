@@ -1,0 +1,371 @@
+2019-02-03 20:05:40,813 [    MainProcess][    Server][    INFO] PokeAlarm is getting ready...
+2019-02-03 20:05:40,817 [    MainProcess][    Server][    INFO] Europe/London
+2019-02-03 20:05:40,830 [    MainProcess][   Manager][    INFO] ----------- Manager 'hc'  is being created.
+2019-02-03 20:05:40,834 [    MainProcess][   Manager][ WARNING] NO LOCATION SET -  this may cause issues with distance related DTS.
+2019-02-03 20:05:40,835 [    MainProcess][   Manager][    INFO] Loading Filters from file at /home/scanbot/PokeAlarm/filters_HC.json
+2019-02-03 20:05:40,843 [    MainProcess][   Manager][    INFO] Parsing 'monsters' section.
+2019-02-03 20:05:40,886 [    MainProcess][   Manager][    INFO] Parsing 'stops' section.
+2019-02-03 20:05:40,886 [    MainProcess][   Manager][    INFO] Parsing 'gyms' section.
+2019-02-03 20:05:40,887 [    MainProcess][   Manager][    INFO] Parsing 'eggs' section.
+2019-02-03 20:05:40,888 [    MainProcess][   Manager][    INFO] Parsing 'raids' section.
+2019-02-03 20:05:40,889 [    MainProcess][   Manager][    INFO] Parsing 'weather' section.
+2019-02-03 20:05:40,890 [    MainProcess][   Manager][    INFO] Parsing 'quest' section.
+2019-02-03 20:05:40,892 [    MainProcess][  Geofence][    INFO] Geofence Pinner added.
+2019-02-03 20:05:40,892 [    MainProcess][  Geofence][    INFO] Geofence Eastcote added.
+2019-02-03 20:05:40,892 [    MainProcess][  Geofence][    INFO] Geofence West Harrow added.
+2019-02-03 20:05:40,892 [    MainProcess][  Geofence][    INFO] Geofence Rayners Lane added.
+2019-02-03 20:05:40,892 [    MainProcess][  Geofence][    INFO] Geofence North Harrow added.
+2019-02-03 20:05:40,893 [    MainProcess][  Geofence][    INFO] Geofence Hatch End added.
+2019-02-03 20:05:40,893 [    MainProcess][  Geofence][    INFO] Geofence Headstone added.
+2019-02-03 20:05:40,893 [    MainProcess][  Geofence][    INFO] Geofence Wealdstone added.
+2019-02-03 20:05:40,893 [    MainProcess][  Geofence][    INFO] Geofence Harrow On The Hill added.
+2019-02-03 20:05:40,893 [    MainProcess][  Geofence][    INFO] Geofence Kenton added.
+2019-02-03 20:05:40,893 [    MainProcess][  Geofence][    INFO] Geofence Harrow added.
+2019-02-03 20:05:40,894 [    MainProcess][  Geofence][    INFO] Geofence Stanmore added.
+2019-02-03 20:05:40,894 [    MainProcess][  Geofence][    INFO] Geofence South Harrow added.
+2019-02-03 20:05:40,894 [    MainProcess][  Geofence][    INFO] Geofence Sudbury Hill added.
+2019-02-03 20:05:40,894 [    MainProcess][  Geofence][    INFO] Geofence Northolt added.
+2019-02-03 20:05:40,894 [    MainProcess][  Geofence][    INFO] Geofence Harrow Weald added.
+2019-02-03 20:05:40,894 [    MainProcess][  Geofence][    INFO] Geofence Coulsdon added.
+2019-02-03 20:05:40,894 [    MainProcess][  Geofence][    INFO] Geofence Chipstead added.
+2019-02-03 20:05:40,895 [    MainProcess][  Geofence][    INFO] Geofence Central Croydon added.
+2019-02-03 20:05:40,895 [    MainProcess][  Geofence][    INFO] Geofence Addiscombe added.
+2019-02-03 20:05:40,895 [    MainProcess][  Geofence][    INFO] Geofence Addington added.
+2019-02-03 20:05:40,895 [    MainProcess][  Geofence][    INFO] Geofence Beddington added.
+2019-02-03 20:05:40,895 [    MainProcess][  Geofence][    INFO] Geofence Whyteleaf added.
+2019-02-03 20:05:40,895 [    MainProcess][  Geofence][    INFO] Geofence Waddon added.
+2019-02-03 20:05:40,895 [    MainProcess][  Geofence][    INFO] Geofence Thornton Heath added.
+2019-02-03 20:05:40,896 [    MainProcess][  Geofence][    INFO] Geofence South Croydon added.
+2019-02-03 20:05:40,896 [    MainProcess][  Geofence][    INFO] Geofence South Beddington added.
+2019-02-03 20:05:40,896 [    MainProcess][  Geofence][    INFO] Geofence Shirley added.
+2019-02-03 20:05:40,896 [    MainProcess][  Geofence][    INFO] Geofence Selsdon added.
+2019-02-03 20:05:40,896 [    MainProcess][  Geofence][    INFO] Geofence Selhurst added.
+2019-02-03 20:05:40,896 [    MainProcess][  Geofence][    INFO] Geofence Purley added.
+2019-02-03 20:05:40,896 [    MainProcess][  Geofence][    INFO] Geofence Old Coulsdon added.
+2019-02-03 20:05:40,896 [    MainProcess][  Geofence][    INFO] Geofence Norbury added.
+2019-02-03 20:05:40,896 [    MainProcess][  Geofence][    INFO] Geofence Mitcham added.
+2019-02-03 20:05:40,897 [    MainProcess][  Geofence][    INFO] Geofence Kenley added.
+2019-02-03 20:05:40,897 [    MainProcess][  Geofence][    INFO] Geofence Hackbridge added.
+2019-02-03 20:05:40,897 [    MainProcess][  Geofence][    INFO] Geofence Croydon added.
+2019-02-03 20:05:40,897 [    MainProcess][  Geofence][    INFO] Geofence Carshalton On The Hill added.
+2019-02-03 20:05:40,897 [    MainProcess][  Geofence][    INFO] Geofence Carshalton added.
+2019-02-03 20:05:40,897 [    MainProcess][  Geofence][    INFO] Geofence Carshalton Beeches added.
+2019-02-03 20:05:40,897 [    MainProcess][  Geofence][    INFO] Geofence St Helier added.
+2019-02-03 20:05:40,897 [    MainProcess][  Geofence][    INFO] Geofence Sutton added.
+2019-02-03 20:05:40,897 [    MainProcess][  Geofence][    INFO] Geofence Belmont added.
+2019-02-03 20:05:40,898 [    MainProcess][  Geofence][    INFO] Geofence Benhilton added.
+2019-02-03 20:05:40,898 [    MainProcess][  Geofence][    INFO] Geofence Sydenham added.
+2019-02-03 20:05:40,898 [    MainProcess][  Geofence][    INFO] Geofence Dulwich added.
+2019-02-03 20:05:40,898 [    MainProcess][  Geofence][    INFO] Geofence West Norwood added.
+2019-02-03 20:05:40,898 [    MainProcess][  Geofence][    INFO] Geofence Norwood added.
+2019-02-03 20:05:40,898 [    MainProcess][  Geofence][    INFO] Geofence Forest Hill added.
+2019-02-03 20:05:40,899 [    MainProcess][  Geofence][    INFO] Geofence Penge added.
+2019-02-03 20:05:40,899 [    MainProcess][  Geofence][    INFO] Geofence West Wickham added.
+2019-02-03 20:05:40,899 [    MainProcess][  Geofence][    INFO] Geofence Beckenham added.
+2019-02-03 20:05:40,899 [    MainProcess][  Geofence][    INFO] Geofence Bellingham added.
+2019-02-03 20:05:40,899 [    MainProcess][  Geofence][    INFO] Geofence Catford added.
+2019-02-03 20:05:40,899 [    MainProcess][  Geofence][    INFO] Geofence Hither Green added.
+2019-02-03 20:05:40,899 [    MainProcess][  Geofence][    INFO] Geofence Crofton Park added.
+2019-02-03 20:05:40,899 [    MainProcess][  Geofence][    INFO] Geofence Ladywell added.
+2019-02-03 20:05:40,899 [    MainProcess][  Geofence][    INFO] Geofence Grove Park added.
+2019-02-03 20:05:40,900 [    MainProcess][  Geofence][    INFO] Geofence Mottingham added.
+2019-02-03 20:05:40,900 [    MainProcess][  Geofence][    INFO] Geofence Downham added.
+2019-02-03 20:05:40,900 [    MainProcess][  Geofence][    INFO] Geofence Sundridge added.
+2019-02-03 20:05:40,900 [    MainProcess][  Geofence][    INFO] Geofence Sidcup added.
+2019-02-03 20:05:40,900 [    MainProcess][  Geofence][    INFO] Geofence Chislehurst added.
+2019-02-03 20:05:40,900 [    MainProcess][  Geofence][    INFO] Geofence New Eltham added.
+2019-02-03 20:05:40,900 [    MainProcess][  Geofence][    INFO] Geofence Elmstead added.
+2019-02-03 20:05:40,901 [    MainProcess][  Geofence][    INFO] Geofence Bromley added.
+2019-02-03 20:05:40,901 [    MainProcess][  Geofence][    INFO] Geofence Keston added.
+2019-02-03 20:05:40,901 [    MainProcess][  Geofence][    INFO] Geofence Thame added.
+2019-02-03 20:05:40,901 [    MainProcess][  Geofence][    INFO] Geofence Hayes added.
+2019-02-03 20:05:40,901 [    MainProcess][  Geofence][    INFO] Geofence West Drayton added.
+2019-02-03 20:05:40,901 [    MainProcess][  Geofence][    INFO] Geofence Uxbridge added.
+2019-02-03 20:05:40,901 [    MainProcess][  Geofence][    INFO] Geofence Ickenham added.
+2019-02-03 20:05:40,901 [    MainProcess][  Geofence][    INFO] Geofence West Ruislip added.
+2019-02-03 20:05:40,902 [    MainProcess][  Geofence][    INFO] Geofence Ruislip added.
+2019-02-03 20:05:40,902 [    MainProcess][  Geofence][    INFO] Geofence South Ruislip added.
+2019-02-03 20:05:40,902 [    MainProcess][  Geofence][    INFO] Geofence Northwood Hills added.
+2019-02-03 20:05:40,902 [    MainProcess][  Geofence][    INFO] Geofence Ruislip Manor added.
+2019-02-03 20:05:40,902 [    MainProcess][  Geofence][    INFO] Geofence Caversham added.
+2019-02-03 20:05:40,902 [    MainProcess][  Geofence][    INFO] Geofence Sonning Common added.
+2019-02-03 20:05:40,902 [    MainProcess][  Geofence][    INFO] Geofence Henley added.
+2019-02-03 20:05:40,902 [    MainProcess][  Geofence][    INFO] Geofence Hurst added.
+2019-02-03 20:05:40,903 [    MainProcess][  Geofence][    INFO] Geofence Twyford added.
+2019-02-03 20:05:40,903 [    MainProcess][  Geofence][    INFO] Geofence Woodley added.
+2019-02-03 20:05:40,903 [    MainProcess][  Geofence][    INFO] Geofence Winnersh added.
+2019-02-03 20:05:40,903 [    MainProcess][  Geofence][    INFO] Geofence Earley added.
+2019-02-03 20:05:40,903 [    MainProcess][  Geofence][    INFO] Geofence Reading added.
+2019-02-03 20:05:40,903 [    MainProcess][  Geofence][    INFO] Geofence Tilehurst added.
+2019-02-03 20:05:40,903 [    MainProcess][  Geofence][    INFO] Geofence Calcot added.
+2019-02-03 20:05:40,903 [    MainProcess][  Geofence][    INFO] Geofence Theale added.
+2019-02-03 20:05:40,903 [    MainProcess][  Geofence][    INFO] Geofence Wokingham added.
+2019-02-03 20:05:40,903 [    MainProcess][  Geofence][    INFO] Geofence Binfield added.
+2019-02-03 20:05:40,904 [    MainProcess][  Geofence][    INFO] Geofence Bracknell added.
+2019-02-03 20:05:40,904 [    MainProcess][  Geofence][    INFO] Geofence North Ascot added.
+2019-02-03 20:05:40,904 [    MainProcess][  Geofence][    INFO] Geofence Ascot added.
+2019-02-03 20:05:40,904 [    MainProcess][  Geofence][    INFO] Geofence Gardeners Green added.
+2019-02-03 20:05:40,904 [    MainProcess][  Geofence][    INFO] Geofence Arborfield added.
+2019-02-03 20:05:40,904 [    MainProcess][  Geofence][    INFO] Geofence Maidenhead added.
+2019-02-03 20:05:40,904 [    MainProcess][  Geofence][    INFO] Geofence Eton added.
+2019-02-03 20:05:40,904 [    MainProcess][  Geofence][    INFO] Geofence Windsor added.
+2019-02-03 20:05:40,904 [    MainProcess][  Geofence][    INFO] Geofence Burnham added.
+2019-02-03 20:05:40,905 [    MainProcess][  Geofence][    INFO] Geofence Farnham Common added.
+2019-02-03 20:05:40,905 [    MainProcess][  Geofence][    INFO] Geofence Stoke Poges added.
+2019-02-03 20:05:40,905 [    MainProcess][  Geofence][    INFO] Geofence Britwell added.
+2019-02-03 20:05:40,905 [    MainProcess][  Geofence][    INFO] Geofence Wexham added.
+2019-02-03 20:05:40,905 [    MainProcess][  Geofence][    INFO] Geofence Datchet added.
+2019-02-03 20:05:40,905 [    MainProcess][  Geofence][    INFO] Geofence Langley added.
+2019-02-03 20:05:40,905 [    MainProcess][  Geofence][    INFO] Geofence Richings Park added.
+2019-02-03 20:05:40,905 [    MainProcess][  Geofence][    INFO] Geofence Colnbrook added.
+2019-02-03 20:05:40,905 [    MainProcess][  Geofence][    INFO] Geofence Slough added.
+2019-02-03 20:05:40,906 [    MainProcess][  Geofence][    INFO] Geofence Kennington added.
+2019-02-03 20:05:40,906 [    MainProcess][  Geofence][    INFO] Geofence Headington added.
+2019-02-03 20:05:40,906 [    MainProcess][  Geofence][    INFO] Geofence Cowley added.
+2019-02-03 20:05:40,906 [    MainProcess][  Geofence][    INFO] Geofence Botley added.
+2019-02-03 20:05:40,906 [    MainProcess][  Geofence][    INFO] Geofence Summertown added.
+2019-02-03 20:05:40,906 [    MainProcess][  Geofence][    INFO] Geofence Oxford added.
+2019-02-03 20:05:40,906 [    MainProcess][  Geofence][    INFO] Geofence Bicester added.
+2019-02-03 20:05:40,906 [    MainProcess][  Geofence][    INFO] Geofence Kidlington added.
+2019-02-03 20:05:40,906 [    MainProcess][  Geofence][    INFO] Geofence Abingdon added.
+2019-02-03 20:05:40,907 [    MainProcess][  Geofence][    INFO] Geofence Radley added.
+2019-02-03 20:05:40,907 [    MainProcess][  Geofence][    INFO] Geofence Didcot added.
+2019-02-03 20:05:40,907 [    MainProcess][  Geofence][    INFO] Geofence East Hendred added.
+2019-02-03 20:05:40,907 [    MainProcess][  Geofence][    INFO] Geofence Ardington added.
+2019-02-03 20:05:40,907 [    MainProcess][  Geofence][    INFO] Geofence Wantage added.
+2019-02-03 20:05:40,907 [    MainProcess][  Geofence][    INFO] Geofence Stanford In The Vale added.
+2019-02-03 20:05:40,907 [    MainProcess][  Geofence][    INFO] Geofence Faringdon added.
+2019-02-03 20:05:40,907 [    MainProcess][  Geofence][    INFO] Geofence Blewbury added.
+2019-02-03 20:05:40,907 [    MainProcess][  Geofence][    INFO] Geofence Chilton added.
+2019-02-03 20:05:40,907 [    MainProcess][  Geofence][    INFO] Geofence Merrow added.
+2019-02-03 20:05:40,908 [    MainProcess][  Geofence][    INFO] Geofence Guildford added.
+2019-02-03 20:05:40,908 [    MainProcess][  Geofence][    INFO] Geofence Stoughton added.
+2019-02-03 20:05:40,908 [    MainProcess][  Geofence][    INFO] Geofence Wood Street added.
+2019-02-03 20:05:40,908 [    MainProcess][  Geofence][    INFO] Geofence Thatcham added.
+2019-02-03 20:05:40,908 [    MainProcess][  Geofence][    INFO] Geofence Wash Common added.
+2019-02-03 20:05:40,908 [    MainProcess][  Geofence][    INFO] Geofence Greenham added.
+2019-02-03 20:05:40,908 [    MainProcess][  Geofence][    INFO] Geofence Donnington added.
+2019-02-03 20:05:40,908 [    MainProcess][  Geofence][    INFO] Geofence Shaw added.
+2019-02-03 20:05:40,908 [    MainProcess][  Geofence][    INFO] Geofence Newbury added.
+2019-02-03 20:05:40,909 [    MainProcess][  Geofence][    INFO] Geofence Cold Ash added.
+2019-02-03 20:05:40,909 [    MainProcess][  Geofence][    INFO] Geofence Upper Bucklebury added.
+2019-02-03 20:05:40,909 [    MainProcess][  Geofence][    INFO] Geofence Kintbury added.
+2019-02-03 20:05:40,909 [    MainProcess][  Geofence][    INFO] Geofence Hungerford added.
+2019-02-03 20:05:40,909 [    MainProcess][  Geofence][    INFO] Geofence Stock Cross added.
+2019-02-03 20:05:40,909 [    MainProcess][  Geofence][    INFO] Geofence Aldermaston added.
+2019-02-03 20:05:40,909 [    MainProcess][  Geofence][    INFO] Geofence White Bushes added.
+2019-02-03 20:05:40,909 [    MainProcess][  Geofence][    INFO] Geofence Merstham added.
+2019-02-03 20:05:40,909 [    MainProcess][  Geofence][    INFO] Geofence Reigate added.
+2019-02-03 20:05:40,910 [    MainProcess][  Geofence][    INFO] Geofence Redhill added.
+2019-02-03 20:05:40,910 [    MainProcess][  Geofence][    INFO] Geofence Ashstead added.
+2019-02-03 20:05:40,910 [    MainProcess][  Geofence][    INFO] Geofence Leatherhead added.
+2019-02-03 20:05:40,910 [    MainProcess][  Geofence][    INFO] Geofence Great Bookham added.
+2019-02-03 20:05:40,910 [    MainProcess][  Geofence][    INFO] Geofence Dorking added.
+2019-02-03 20:05:40,910 [    MainProcess][  Geofence][    INFO] Geofence Woking added.
+2019-02-03 20:05:40,910 [    MainProcess][  Geofence][    INFO] Geofence West Byfleet added.
+2019-02-03 20:05:40,910 [    MainProcess][  Geofence][    INFO] Geofence Brookwood added.
+2019-02-03 20:05:40,911 [    MainProcess][  Geofence][    INFO] Geofence Send added.
+2019-02-03 20:05:40,911 [    MainProcess][  Geofence][    INFO] Geofence Ripley added.
+2019-02-03 20:05:40,911 [    MainProcess][  Geofence][    INFO] Geofence Chobham added.
+2019-02-03 20:05:40,911 [    MainProcess][  Geofence][    INFO] Geofence Byfleet added.
+2019-02-03 20:05:40,911 [    MainProcess][  Geofence][    INFO] Geofence Egham added.
+2019-02-03 20:05:40,911 [    MainProcess][  Geofence][    INFO] Geofence Staines added.
+2019-02-03 20:05:40,911 [    MainProcess][  Geofence][    INFO] Geofence Englefield Green added.
+2019-02-03 20:05:40,911 [    MainProcess][  Geofence][    INFO] Geofence Chertsey added.
+2019-02-03 20:05:40,912 [    MainProcess][  Geofence][    INFO] Geofence Weybridge added.
+2019-02-03 20:05:40,912 [    MainProcess][  Geofence][    INFO] Geofence Walton-On-Thames added.
+2019-02-03 20:05:40,912 [    MainProcess][  Geofence][    INFO] Geofence Molesley added.
+2019-02-03 20:05:40,912 [    MainProcess][  Geofence][    INFO] Geofence Ashford added.
+2019-02-03 20:05:40,912 [    MainProcess][  Geofence][    INFO] Geofence Addlestone added.
+2019-02-03 20:05:40,912 [    MainProcess][  Geofence][    INFO] Geofence Farnham added.
+2019-02-03 20:05:40,912 [    MainProcess][  Geofence][    INFO] Geofence Wrecclesham added.
+2019-02-03 20:05:40,912 [    MainProcess][  Geofence][    INFO] Geofence Aldershot added.
+2019-02-03 20:05:40,912 [    MainProcess][  Geofence][    INFO] Geofence Sandhurst added.
+2019-02-03 20:05:40,913 [    MainProcess][  Geofence][    INFO] Geofence Farnborough added.
+2019-02-03 20:05:40,913 [    MainProcess][  Geofence][    INFO] Geofence Camberley added.
+2019-02-03 20:05:40,913 [    MainProcess][  Geofence][    INFO] Geofence Crowthorne added.
+2019-02-03 20:05:40,913 [    MainProcess][  Geofence][    INFO] Geofence Yateley added.
+2019-02-03 20:05:40,913 [    MainProcess][  Geofence][    INFO] Geofence Bagshot added.
+2019-02-03 20:05:40,913 [    MainProcess][  Geofence][    INFO] Geofence Fleet added.
+2019-02-03 20:05:40,913 [    MainProcess][  Geofence][    INFO] Geofence Basingstoke added.
+2019-02-03 20:05:40,913 [    MainProcess][  Geofence][    INFO] Geofence Tadley added.
+2019-02-03 20:05:40,913 [    MainProcess][  Geofence][    INFO] Geofence Andwell added.
+2019-02-03 20:05:40,914 [    MainProcess][  Geofence][    INFO] Geofence Odiham added.
+2019-02-03 20:05:40,914 [    MainProcess][  Geofence][    INFO] Geofence Chineham added.
+2019-02-03 20:05:40,914 [    MainProcess][  Geofence][    INFO] Geofence North Waltham added.
+2019-02-03 20:05:40,914 [    MainProcess][  Geofence][    INFO] Geofence Kingsclere added.
+2019-02-03 20:05:40,914 [    MainProcess][  Geofence][    INFO] Geofence Witney added.
+2019-02-03 20:05:40,914 [    MainProcess][  Geofence][    INFO] Geofence Carterton added.
+2019-02-03 20:05:40,914 [    MainProcess][  Geofence][    INFO] Geofence Bampton added.
+2019-02-03 20:05:40,914 [    MainProcess][  Geofence][    INFO] Geofence Minster Lovell added.
+2019-02-03 20:05:40,914 [    MainProcess][  Geofence][    INFO] Geofence Eynsham added.
+2019-02-03 20:05:40,914 [    MainProcess][  Geofence][    INFO] Geofence Beaconsfield added.
+2019-02-03 20:05:40,915 [    MainProcess][  Geofence][    INFO] Geofence Holmer Green added.
+2019-02-03 20:05:40,915 [    MainProcess][  Geofence][    INFO] Geofence Amersham added.
+2019-02-03 20:05:40,915 [    MainProcess][  Geofence][    INFO] Geofence Hazlemere added.
+2019-02-03 20:05:40,915 [    MainProcess][  Geofence][    INFO] Geofence Flackwell Heath added.
+2019-02-03 20:05:40,915 [    MainProcess][  Geofence][    INFO] Geofence Bourne End added.
+2019-02-03 20:05:40,915 [    MainProcess][  Geofence][    INFO] Geofence High Wycombe added.
+2019-02-03 20:05:40,915 [    MainProcess][  Geofence][    INFO] Geofence Marlow added.
+2019-02-03 20:05:40,915 [    MainProcess][  Geofence][    INFO] Geofence Gerrards Cross added.
+2019-02-03 20:05:40,916 [    MainProcess][  Geofence][    INFO] Geofence Great Missenden added.
+2019-02-03 20:05:40,916 [    MainProcess][  Geofence][    INFO] Geofence Great Kingshill added.
+2019-02-03 20:05:40,916 [    MainProcess][  Geofence][    INFO] Geofence Old Windsor added.
+2019-02-03 20:05:40,916 [    MainProcess][  Geofence][    INFO] Geofence Tidmarsh added.
+2019-02-03 20:05:40,916 [    MainProcess][  Geofence][    INFO] Geofence Burghfield Common added.
+2019-02-03 20:05:40,916 [    MainProcess][  Geofence][    INFO] Geofence Mortimer Common added.
+2019-02-03 20:05:40,916 [    MainProcess][  Geofence][    INFO] Geofence Hughenden Valley added.
+2019-02-03 20:05:40,916 [    MainProcess][  Geofence][    INFO] Geofence Oakley added.
+2019-02-03 20:05:40,916 [    MainProcess][  Geofence][    INFO] Geofence Cranford added.
+2019-02-03 20:05:40,917 [    MainProcess][  Geofence][    INFO] Geofence Feltham added.
+2019-02-03 20:05:40,917 [    MainProcess][  Geofence][    INFO] Geofence Sunbury-On-Thames added.
+2019-02-03 20:05:40,917 [    MainProcess][  Geofence][    INFO] Geofence Pyrford added.
+2019-02-03 20:05:40,917 [    MainProcess][  Geofence][    INFO] Geofence Wisley added!
+2019-02-03 20:05:40,917 [    MainProcess][   Manager][    INFO] Loading Alarms from the file at /home/scanbot/PokeAlarm/alarm_MAD.json
+2019-02-03 20:05:40,918 [    MainProcess][   Discord][    INFO] Discord Alarm has been created!
+2019-02-03 20:05:40,918 [    MainProcess][   Discord][    INFO] Discord Alarm has been created!
+2019-02-03 20:05:40,918 [    MainProcess][   Manager][    INFO] 2 active alarms found.
+2019-02-03 20:05:40,918 [    MainProcess][   Manager][    INFO] ----------- Manager 'hc'  successfully created.
+2019-02-03 20:05:40,919 [    MainProcess][LoadConfig][    INFO] Loading Rules from file at /home/scanbot/PokeAlarm/rules_HC.json
+2019-02-03 20:05:40,920 [    MainProcess][    Server][    INFO] Starting up the Managers
+2019-02-03 20:05:40,920 [    MainProcess][    Server][    INFO] PokeAlarm is listening for webhooks on: http://178.250.73.132:4006
+2019-02-03 20:05:41,536 [    MainProcess][   Manager][    INFO] 5221469669633818624 is in geofence Burnham!
+2019-02-03 20:05:41,537 [    MainProcess][   Manager][    INFO] 5221469669633818624 is in geofence Slough!
+2019-02-03 20:05:41,538 [    MainProcess][   Manager][    INFO] 5221469669633818624 weather notification has been triggered in rule 'SloughWeather'!
+2019-02-03 20:05:41,836 [    MainProcess][   Manager][    INFO] 5221469669633818624 is in geofence Marlow!
+2019-02-03 20:05:41,837 [    MainProcess][   Manager][    INFO] 5221469669633818624 is in geofence Beaconsfield!
+2019-02-03 20:05:41,838 [    MainProcess][   Manager][    INFO] 5221469669633818624 is in geofence Flackwell Heath!
+2019-02-03 20:05:41,838 [    MainProcess][   Manager][    INFO] 5221469669633818624 is in geofence Bourne End!
+2019-02-03 20:05:41,838 [    MainProcess][   Manager][    INFO] 5221469669633818624 weather notification has been triggered in rule 'HighWycombeWeather'!
+2019-02-03 20:05:42,087 [    MainProcess][   Manager][    INFO] 5221469669633818624 is in geofence Maidenhead!
+2019-02-03 20:05:42,087 [    MainProcess][   Manager][    INFO] 5221469669633818624 weather notification has been triggered in rule 'MaidenheadWeather'!
+2019-02-03 20:05:42,307 [    MainProcess][   Manager][    INFO] Bridge Gardens Sign egg notification has been triggered in rule 'Eggs' to Maidenhead!
+2019-02-03 20:05:42,520 [    MainProcess][   Manager][    INFO] Shady Tree raid notification has been triggered in rule 'Raids' to Maidenhead!
+2019-02-03 20:05:43,715 [    MainProcess][   Manager][    INFO] 5221485062796607488 is in geofence Ashford!
+2019-02-03 20:05:43,715 [    MainProcess][   Manager][    INFO] 5221485062796607488 is in geofence Egham!
+2019-02-03 20:05:43,716 [    MainProcess][   Manager][    INFO] 5221485062796607488 is in geofence Staines!
+2019-02-03 20:05:43,716 [    MainProcess][   Manager][    INFO] 5221485062796607488 weather notification has been triggered in rule 'StainesWeather'!
+2019-02-03 20:05:44,128 [    MainProcess][   Manager][    INFO] 5221485062796607488 is in geofence Slough!
+2019-02-03 20:05:44,129 [    MainProcess][   Manager][    INFO] 5221485062796607488 is in geofence Wexham!
+2019-02-03 20:05:44,129 [    MainProcess][   Manager][    INFO] 5221485062796607488 is in geofence Langley!
+2019-02-03 20:05:44,130 [    MainProcess][   Manager][    INFO] 5221485062796607488 is in geofence Datchet!
+2019-02-03 20:05:44,130 [    MainProcess][   Manager][    INFO] 5221485062796607488 is in geofence Richings Park!
+2019-02-03 20:05:44,131 [    MainProcess][   Manager][    INFO] 5221485062796607488 is in geofence Colnbrook!
+2019-02-03 20:05:44,131 [    MainProcess][   Manager][    INFO] 5221485062796607488 weather notification has been triggered in rule 'SloughWeather'!
+2019-02-03 20:05:44,356 [    MainProcess][   Manager][    INFO] 5221485062796607488 is in geofence West Drayton!
+2019-02-03 20:05:44,356 [    MainProcess][   Manager][    INFO] 5221485062796607488 weather notification has been triggered in rule 'UxbridgeWeather'!
+2019-02-03 20:05:44,622 [    MainProcess][   Manager][    INFO] 5221485062796607488 is in geofence Old Windsor!
+2019-02-03 20:05:44,622 [    MainProcess][   Manager][    INFO] 5221485062796607488 weather notification has been triggered in rule 'MaidenheadWeather'!
+2019-02-03 20:05:44,879 [    MainProcess][   Manager][    INFO] Wraysbury Baptist Church raid notification has been triggered in rule 'Raids' to Old Windsor!
+2019-02-03 20:05:48,604 [    MainProcess][   Manager][    INFO] 5221531242284974080 is in geofence Sonning Common!
+2019-02-03 20:05:48,605 [    MainProcess][   Manager][    INFO] 5221531242284974080 is in geofence Caversham!
+2019-02-03 20:05:48,605 [    MainProcess][   Manager][    INFO] 5221531242284974080 is in geofence Calcot!
+2019-02-03 20:05:48,606 [    MainProcess][   Manager][    INFO] 5221531242284974080 is in geofence Earley!
+2019-02-03 20:05:48,606 [    MainProcess][   Manager][    INFO] 5221531242284974080 is in geofence Reading!
+2019-02-03 20:05:48,607 [    MainProcess][   Manager][    INFO] 5221531242284974080 is in geofence Tilehurst!
+2019-02-03 20:05:48,607 [    MainProcess][   Manager][    INFO] 5221531242284974080 weather notification has been triggered in rule 'ReadingWeather'!
+2019-02-03 20:05:48,898 [    MainProcess][   Manager][    INFO] The Salvation Army raid notification has been triggered in rule 'Raids' to Reading!
+2019-02-03 20:05:49,135 [    MainProcess][   Manager][    INFO] The Pavilion egg notification has been triggered in rule 'Eggs' to Reading!
+2019-02-03 20:05:49,391 [    MainProcess][   Manager][    INFO] Seventh-Day Adventist Church raid notification has been triggered in rule 'Raids' to Reading!
+2019-02-03 20:05:49,634 [    MainProcess][   Manager][    INFO] Bridge Hall egg notification has been triggered in rule 'Eggs' to Reading!
+2019-02-03 20:05:59,397 [    MainProcess][   Manager][    INFO] Maidenhead Flooding Plaque  quest notification has been triggered in rule 'Quest'!
+2019-02-03 20:06:03,990 [    MainProcess][   Manager][    INFO] 5221496057912885248 is in geofence Englefield Green!
+2019-02-03 20:06:03,991 [    MainProcess][   Manager][    INFO] 5221496057912885248 is in geofence Egham!
+2019-02-03 20:06:03,991 [    MainProcess][   Manager][    INFO] 5221496057912885248 weather notification has been triggered in rule 'StainesWeather'!
+2019-02-03 20:06:04,302 [    MainProcess][   Manager][    INFO] 5221496057912885248 is in geofence Slough!
+2019-02-03 20:06:04,302 [    MainProcess][   Manager][    INFO] 5221496057912885248 is in geofence Wexham!
+2019-02-03 20:06:04,303 [    MainProcess][   Manager][    INFO] 5221496057912885248 is in geofence Datchet!
+2019-02-03 20:06:04,304 [    MainProcess][   Manager][    INFO] 5221496057912885248 weather notification has been triggered in rule 'SloughWeather'!
+2019-02-03 20:06:04,527 [    MainProcess][   Manager][    INFO] 5221496057912885248 is in geofence Eton!
+2019-02-03 20:06:04,527 [    MainProcess][   Manager][    INFO] 5221496057912885248 is in geofence Old Windsor!
+2019-02-03 20:06:04,528 [    MainProcess][   Manager][    INFO] 5221496057912885248 is in geofence Windsor!
+2019-02-03 20:06:04,528 [    MainProcess][   Manager][    INFO] 5221496057912885248 weather notification has been triggered in rule 'MaidenheadWeather'!
+2019-02-03 20:06:04,692 [    MainProcess][   Manager][    INFO] Fox & Castle egg notification has been triggered in rule 'Eggs' to Old Windsor!
+2019-02-03 20:06:08,559 [    MainProcess][   Manager][    INFO] Caversham Cenotaph egg notification has been triggered in rule 'Eggs' to Caversham!
+2019-02-03 20:06:08,698 [    MainProcess][   Manager][    INFO] Reading Station North Entrance egg notification has been triggered in rule 'Eggs' to Reading!
+2019-02-03 20:06:18,968 [    MainProcess][   Manager][    INFO] The Alehouse raid notification has been triggered in rule 'Raids' to Reading!
+2019-02-03 20:06:19,240 [    MainProcess][   Manager][    INFO] St Giles In Reading Church egg notification has been triggered in rule 'Eggs' to Reading!
+2019-02-03 20:06:31,674 [    MainProcess][   Manager][    INFO] Maidenhead Bridge  quest notification has been triggered in rule 'Quest'!
+2019-02-03 20:06:37,101 [    MainProcess][   Manager][    INFO] The Two Brewers egg notification has been triggered in rule 'Eggs' to Datchet!
+2019-02-03 20:06:41,603 [    MainProcess][   Manager][    INFO] Waterloo Meadows Monuments egg notification has been triggered in rule 'Eggs' to Reading!
+2019-02-03 20:06:41,879 [    MainProcess][   Manager][    INFO] Reading Climbing Centre Wall egg notification has been triggered in rule 'Eggs' to Reading!
+2019-02-03 20:07:07,774 [    MainProcess][   Manager][    INFO] 5221533441308229632 is in geofence Calcot!
+2019-02-03 20:07:07,775 [    MainProcess][   Manager][    INFO] 5221533441308229632 is in geofence Earley!
+2019-02-03 20:07:07,775 [    MainProcess][   Manager][    INFO] 5221533441308229632 is in geofence Reading!
+2019-02-03 20:07:07,775 [    MainProcess][   Manager][    INFO] 5221533441308229632 weather notification has been triggered in rule 'ReadingWeather'!
+2019-02-03 20:07:08,501 [    MainProcess][   Manager][    INFO] Chin Ups raid notification has been triggered in rule 'Raids' to Reading!
+2019-02-03 20:07:15,836 [    MainProcess][   Manager][    INFO] Guards Club Park Pagoda quest notification has been triggered in rule 'Quest'!
+2019-02-03 20:07:18,790 [    MainProcess][   Manager][    INFO] Dedworth War Memorial egg notification has been triggered in rule 'Eggs' to Windsor!
+2019-02-03 20:07:39,353 [    MainProcess][   Manager][    INFO] Whitley Graffiti Court egg notification has been triggered in rule 'Eggs' to Reading!
+2019-02-03 20:07:52,098 [    MainProcess][   Manager][    INFO] Guards Club Park Sign quest notification has been triggered in rule 'Quest'!
+2019-02-03 20:07:57,809 [    MainProcess][   Manager][    INFO] Guardians of the Green Way egg notification has been triggered in rule 'Eggs' to Maidenhead!
+2019-02-03 20:07:58,100 [    MainProcess][   Manager][    INFO] Maidenhead Town Centre raid notification has been triggered in rule 'Raids' to Maidenhead!
+2019-02-03 20:07:59,918 [    MainProcess][   Manager][    INFO] Eton School Library egg notification has been triggered in rule 'Eggs' to Eton!
+2019-02-03 20:08:03,371 [    MainProcess][   Manager][    INFO] Play Area LBL Rec raid notification has been triggered in rule 'Raids' to Reading!
+2019-02-03 20:08:03,597 [    MainProcess][   Manager][    INFO] Cintra Park Gate raid notification has been triggered in rule 'Raids' to Reading!
+2019-02-03 20:08:03,792 [    MainProcess][   Manager][    INFO] St Patrick's Hall Pearson Court raid notification has been triggered in rule 'Raids' to Reading!
+2019-02-03 20:08:23,852 [    MainProcess][   Manager][    INFO] Royal Mail raid notification has been triggered in rule 'Raids' to Slough!
+2019-02-03 20:08:24,028 [    MainProcess][   Manager][    INFO] St Mary's egg notification has been triggered in rule 'Eggs' to Slough!
+2019-02-03 20:08:25,320 [    MainProcess][   Manager][    INFO] 5221504854005907456 is in geofence Yateley!
+2019-02-03 20:08:25,321 [    MainProcess][   Manager][    INFO] 5221504854005907456 weather notification has been triggered in rule 'CamberleyWeather'!
+2019-02-03 20:08:25,512 [    MainProcess][   Manager][    INFO] 5221504854005907456 is in geofence Earley!
+2019-02-03 20:08:25,513 [    MainProcess][   Manager][    INFO] 5221504854005907456 is in geofence Winnersh!
+2019-02-03 20:08:25,513 [    MainProcess][   Manager][    INFO] 5221504854005907456 weather notification has been triggered in rule 'ReadingWeather'!
+2019-02-03 20:08:25,793 [    MainProcess][   Manager][    INFO] 5221504854005907456 is in geofence Wokingham!
+2019-02-03 20:08:25,794 [    MainProcess][   Manager][    INFO] 5221504854005907456 is in geofence Arborfield!
+2019-02-03 20:08:25,795 [    MainProcess][   Manager][    INFO] 5221504854005907456 weather notification has been triggered in rule 'BracknellWeather'!
+2019-02-03 20:08:26,055 [    MainProcess][   Manager][    INFO] 5221507053029163008 is in geofence Sonning Common!
+2019-02-03 20:08:26,055 [    MainProcess][   Manager][    INFO] 5221507053029163008 is in geofence Woodley!
+2019-02-03 20:08:26,055 [    MainProcess][   Manager][    INFO] 5221507053029163008 is in geofence Henley!
+2019-02-03 20:08:26,056 [    MainProcess][   Manager][    INFO] 5221507053029163008 is in geofence Caversham!
+2019-02-03 20:08:26,056 [    MainProcess][   Manager][    INFO] 5221507053029163008 is in geofence Twyford!
+2019-02-03 20:08:26,056 [    MainProcess][   Manager][    INFO] 5221507053029163008 is in geofence Hurst!
+2019-02-03 20:08:26,057 [    MainProcess][   Manager][    INFO] 5221507053029163008 is in geofence Earley!
+2019-02-03 20:08:26,057 [    MainProcess][   Manager][    INFO] 5221507053029163008 is in geofence Reading!
+2019-02-03 20:08:26,058 [    MainProcess][   Manager][    INFO] 5221507053029163008 is in geofence Winnersh!
+2019-02-03 20:08:26,058 [    MainProcess][   Manager][    INFO] 5221507053029163008 weather notification has been triggered in rule 'ReadingWeather'!
+2019-02-03 20:08:26,260 [    MainProcess][   Manager][    INFO] 5221507053029163008 is in geofence Wokingham!
+2019-02-03 20:08:26,261 [    MainProcess][   Manager][    INFO] 5221507053029163008 weather notification has been triggered in rule 'BracknellWeather'!
+2019-02-03 20:08:26,503 [    MainProcess][   Manager][    INFO] 1890 Fishery Estate Historic Boundary Marker quest notification has been triggered in rule 'Quest'!
+2019-02-03 20:08:44,116 [    MainProcess][   Manager][    INFO] Windmill egg notification has been triggered in rule 'Eggs' to Slough!
+2019-02-03 20:08:44,323 [    MainProcess][   Manager][    INFO] Stone Sign Post raid notification has been triggered in rule 'Raids' to Slough!
+2019-02-03 20:08:44,530 [    MainProcess][   Manager][    INFO] Ledgers Rd Methodist Church raid notification has been triggered in rule 'Raids' to Slough!
+2019-02-03 20:08:50,486 [    MainProcess][   Manager][    INFO] South Whitley Park Lexington raid notification has been triggered in rule 'Raids' to Reading!
+2019-02-03 20:08:50,833 [    MainProcess][   Manager][    INFO] Whitley Post Office raid notification has been triggered in rule 'Raids' to Reading!
+2019-02-03 20:08:51,074 [    MainProcess][   Manager][    INFO] Whitley Wood Basketball Court egg notification has been triggered in rule 'Eggs' to Reading!
+2019-02-03 20:09:00,362 [    MainProcess][   Manager][    INFO] Shinfield Parish Footpaths Map egg notification has been triggered in rule 'Eggs' to Reading!
+2019-02-03 20:09:04,091 [    MainProcess][   Manager][    INFO] 5221471868657074176 is in geofence Burnham!
+2019-02-03 20:09:04,092 [    MainProcess][   Manager][    INFO] 5221471868657074176 is in geofence Slough!
+2019-02-03 20:09:04,092 [    MainProcess][   Manager][    INFO] 5221471868657074176 is in geofence Wexham!
+2019-02-03 20:09:04,093 [    MainProcess][   Manager][    INFO] 5221471868657074176 is in geofence Farnham Common!
+2019-02-03 20:09:04,093 [    MainProcess][   Manager][    INFO] 5221471868657074176 is in geofence Britwell!
+2019-02-03 20:09:04,094 [    MainProcess][   Manager][    INFO] 5221471868657074176 is in geofence Stoke Poges!
+2019-02-03 20:09:04,094 [    MainProcess][   Manager][    INFO] 5221471868657074176 weather notification has been triggered in rule 'SloughWeather'!
+2019-02-03 20:09:04,237 [    MainProcess][   Manager][    INFO] 5221471868657074176 is in geofence Gerrards Cross!
+2019-02-03 20:09:04,237 [    MainProcess][   Manager][    INFO] 5221471868657074176 is in geofence Beaconsfield!
+2019-02-03 20:09:04,238 [    MainProcess][   Manager][    INFO] 5221471868657074176 weather notification has been triggered in rule 'HighWycombeWeather'!
+2019-02-03 20:09:13,948 [    MainProcess][   Manager][    INFO] Ferrari Stone egg notification has been triggered in rule 'Eggs' to Slough!
+2019-02-03 20:09:14,148 [    MainProcess][   Manager][    INFO] Cippenham Community Centre egg notification has been triggered in rule 'Eggs' to Slough!
+2019-02-03 20:09:20,942 [    MainProcess][   Manager][    INFO] The Grenfell Arms quest notification has been triggered in rule 'Quest'!
+2019-02-03 20:09:32,814 [    MainProcess][   Manager][    INFO] unknown egg notification has been triggered in rule 'Eggs' to Earley!
+2019-02-03 20:09:47,772 [    MainProcess][   Manager][    INFO] The United Reformed Church egg notification has been triggered in rule 'Eggs' to Maidenhead!
+2019-02-03 20:09:57,867 [    MainProcess][   Manager][    INFO] The Green Way Footprints raid notification has been triggered in rule 'Raids' to Maidenhead!
+2019-02-03 20:10:06,230 [    MainProcess][   Manager][    INFO] Dorney Wetlands raid notification has been triggered in rule 'Raids' to Eton!
+2019-02-03 20:10:06,475 [    MainProcess][   Manager][    INFO] unknown egg notification has been triggered in rule 'Eggs' to Slough!
+2019-02-03 20:10:17,089 [    MainProcess][   Manager][    INFO] St Mary's  Burnham raid notification has been triggered in rule 'Raids' to Burnham!
+2019-02-03 20:10:24,634 [    MainProcess][   Manager][    INFO] The Ark Public House quest notification has been triggered in rule 'Quest'!
+2019-02-03 20:10:31,567 [    MainProcess][   Manager][    INFO] The Church Of Jesus Christ Of The Latter-Day Saints egg notification has been triggered in rule 'Eggs' to Slough!
+2019-02-03 20:10:31,727 [    MainProcess][   Manager][    INFO] War Memorial egg notification has been triggered in rule 'Eggs' to Burnham!
+2019-02-03 20:10:31,940 [    MainProcess][   Manager][    INFO] Burnham Bowls Club egg notification has been triggered in rule 'Eggs' to Burnham!
+2019-02-03 20:10:36,450 [    MainProcess][   Manager][    INFO] Earley St. Peter's Church raid notification has been triggered in rule 'Raids' to Reading!
+2019-02-03 20:10:36,631 [    MainProcess][   Manager][    INFO] Palmer Park South Entrance raid notification has been triggered in rule 'Raids' to Reading!
+2019-02-03 20:10:47,541 [    MainProcess][   Manager][    INFO] Cippenham Rose Fields raid notification has been triggered in rule 'Raids' to Slough!
+2019-02-03 20:10:47,753 [    MainProcess][   Manager][    INFO] NULL egg notification has been triggered in rule 'Eggs' to Britwell!
+2019-02-03 20:10:47,957 [    MainProcess][   Manager][    INFO] Newchurch Park raid notification has been triggered in rule 'Raids' to Britwell!
+2019-02-03 20:11:07,820 [    MainProcess][   Manager][    INFO] Britwell Centre raid notification has been triggered in rule 'Raids' to Britwell!
+2019-02-03 20:11:17,409 [    MainProcess][   Manager][    INFO] Moorbridge Road Information Plaque  quest notification has been triggered in rule 'Quest'!
+2019-02-03 20:11:27,816 [    MainProcess][   Manager][    INFO] Burnham Beeches Lower Pond Sign egg notification has been triggered in rule 'Eggs' to Farnham Common!
+2019-02-03 20:11:27,998 [    MainProcess][   Manager][    INFO] Burnham Beeches West egg notification has been triggered in rule 'Eggs' to Burnham!
+2019-02-03 20:11:28,177 [    MainProcess][   Manager][    INFO] Pollards And Pollarding Sign egg notification has been triggered in rule 'Eggs' to Farnham Common!
+2019-02-03 20:11:33,073 [    MainProcess][   Manager][    INFO] Maidenhead Clock Tower raid notification has been triggered in rule 'Raids' to Maidenhead!
+2019-02-03 20:11:33,355 [    MainProcess][   Manager][    INFO] Reading Man Statue egg notification has been triggered in rule 'Eggs' to Maidenhead!

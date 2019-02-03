@@ -1,0 +1,116 @@
+2019-02-03 20:07:11,588 [    MainProcess][    Server][    INFO] PokeAlarm is getting ready...
+2019-02-03 20:07:11,592 [    MainProcess][    Server][    INFO] Europe/London
+2019-02-03 20:07:11,605 [    MainProcess][   Manager][    INFO] ----------- Manager 'sussexmad'  is being created.
+2019-02-03 20:07:11,609 [    MainProcess][   Manager][ WARNING] NO LOCATION SET -  this may cause issues with distance related DTS.
+2019-02-03 20:07:11,622 [    MainProcess][   Manager][    INFO] Loading Filters from file at /home/scanbot/PokeAlarm/filters_Sussex.json
+2019-02-03 20:07:11,629 [    MainProcess][   Manager][    INFO] Parsing 'monsters' section.
+2019-02-03 20:07:11,667 [    MainProcess][   Manager][    INFO] Parsing 'stops' section.
+2019-02-03 20:07:11,668 [    MainProcess][   Manager][    INFO] Parsing 'gyms' section.
+2019-02-03 20:07:11,668 [    MainProcess][   Manager][    INFO] Parsing 'eggs' section.
+2019-02-03 20:07:11,669 [    MainProcess][   Manager][    INFO] Parsing 'raids' section.
+2019-02-03 20:07:11,670 [    MainProcess][   Manager][    INFO] Parsing 'weather' section.
+2019-02-03 20:07:11,670 [    MainProcess][   Manager][    INFO] Parsing 'quest' section.
+2019-02-03 20:07:11,672 [    MainProcess][  Geofence][    INFO] Geofence Henfield added.
+2019-02-03 20:07:11,672 [    MainProcess][  Geofence][    INFO] Geofence Pulborough added.
+2019-02-03 20:07:11,672 [    MainProcess][  Geofence][    INFO] Geofence West Chitlington added.
+2019-02-03 20:07:11,672 [    MainProcess][  Geofence][    INFO] Geofence Storrington added.
+2019-02-03 20:07:11,672 [    MainProcess][  Geofence][    INFO] Geofence Bognor East added.
+2019-02-03 20:07:11,673 [    MainProcess][  Geofence][    INFO] Geofence Bognor West added.
+2019-02-03 20:07:11,673 [    MainProcess][  Geofence][    INFO] Geofence Barnham added.
+2019-02-03 20:07:11,673 [    MainProcess][  Geofence][    INFO] Geofence Horsham added.
+2019-02-03 20:07:11,673 [    MainProcess][  Geofence][    INFO] Geofence Haywards Heath added.
+2019-02-03 20:07:11,673 [    MainProcess][  Geofence][    INFO] Geofence Burgess Hill added.
+2019-02-03 20:07:11,673 [    MainProcess][  Geofence][    INFO] Geofence Hassocks added.
+2019-02-03 20:07:11,673 [    MainProcess][  Geofence][    INFO] Geofence Hurstpierpoint added.
+2019-02-03 20:07:11,673 [    MainProcess][  Geofence][    INFO] Geofence Sayers Common added.
+2019-02-03 20:07:11,673 [    MainProcess][  Geofence][    INFO] Geofence Albourne added.
+2019-02-03 20:07:11,674 [    MainProcess][  Geofence][    INFO] Geofence Plumpton added.
+2019-02-03 20:07:11,674 [    MainProcess][  Geofence][    INFO] Geofence South Chailey added.
+2019-02-03 20:07:11,674 [    MainProcess][  Geofence][    INFO] Geofence North Chailey added.
+2019-02-03 20:07:11,674 [    MainProcess][  Geofence][    INFO] Geofence Wivelsfield Green added.
+2019-02-03 20:07:11,674 [    MainProcess][  Geofence][    INFO] Geofence Lewes added.
+2019-02-03 20:07:11,674 [    MainProcess][  Geofence][    INFO] Geofence Cooksbridge added.
+2019-02-03 20:07:11,674 [    MainProcess][  Geofence][    INFO] Geofence Barcombe added.
+2019-02-03 20:07:11,674 [    MainProcess][  Geofence][    INFO] Geofence Ringmer added.
+2019-02-03 20:07:11,674 [    MainProcess][  Geofence][    INFO] Geofence East Brighton added.
+2019-02-03 20:07:11,675 [    MainProcess][  Geofence][    INFO] Geofence Central Brighton added.
+2019-02-03 20:07:11,675 [    MainProcess][  Geofence][    INFO] Geofence Woodingdean added.
+2019-02-03 20:07:11,675 [    MainProcess][  Geofence][    INFO] Geofence Coldean added.
+2019-02-03 20:07:11,675 [    MainProcess][  Geofence][    INFO] Geofence Patcham added.
+2019-02-03 20:07:11,675 [    MainProcess][  Geofence][    INFO] Geofence Falmer added.
+2019-02-03 20:07:11,675 [    MainProcess][  Geofence][    INFO] Geofence Bevendean added.
+2019-02-03 20:07:11,675 [    MainProcess][  Geofence][    INFO] Geofence Moulsecoomb added.
+2019-02-03 20:07:11,675 [    MainProcess][  Geofence][    INFO] Geofence Withdean added.
+2019-02-03 20:07:11,675 [    MainProcess][  Geofence][    INFO] Geofence Ferring added.
+2019-02-03 20:07:11,676 [    MainProcess][  Geofence][    INFO] Geofence Goring added.
+2019-02-03 20:07:11,676 [    MainProcess][  Geofence][    INFO] Geofence Durrington added.
+2019-02-03 20:07:11,676 [    MainProcess][  Geofence][    INFO] Geofence Highdown added.
+2019-02-03 20:07:11,676 [    MainProcess][  Geofence][    INFO] Geofence Broadwater added.
+2019-02-03 20:07:11,676 [    MainProcess][  Geofence][    INFO] Geofence Salvington added.
+2019-02-03 20:07:11,676 [    MainProcess][  Geofence][    INFO] Geofence West Worthing added.
+2019-02-03 20:07:11,676 [    MainProcess][  Geofence][    INFO] Geofence Central Worthing added.
+2019-02-03 20:07:11,677 [    MainProcess][  Geofence][    INFO] Geofence East Worthing added.
+2019-02-03 20:07:11,677 [    MainProcess][  Geofence][    INFO] Geofence Brooklands added.
+2019-02-03 20:07:11,677 [    MainProcess][  Geofence][    INFO] Geofence Sompting added.
+2019-02-03 20:07:11,677 [    MainProcess][  Geofence][    INFO] Geofence High Salvington added.
+2019-02-03 20:07:11,677 [    MainProcess][  Geofence][    INFO] Geofence Findon Valley added.
+2019-02-03 20:07:11,677 [    MainProcess][  Geofence][    INFO] Geofence Hill Barn added.
+2019-02-03 20:07:11,677 [    MainProcess][  Geofence][    INFO] Geofence Cissbury added.
+2019-02-03 20:07:11,678 [    MainProcess][  Geofence][    INFO] Geofence Findon Village added.
+2019-02-03 20:07:11,678 [    MainProcess][  Geofence][    INFO] Geofence Downs added.
+2019-02-03 20:07:11,678 [    MainProcess][  Geofence][    INFO] Geofence Tarring added.
+2019-02-03 20:07:11,678 [    MainProcess][  Geofence][    INFO] Geofence Gatwick Airport added.
+2019-02-03 20:07:11,678 [    MainProcess][  Geofence][    INFO] Geofence Broadfield added.
+2019-02-03 20:07:11,678 [    MainProcess][  Geofence][    INFO] Geofence Tilgate added.
+2019-02-03 20:07:11,678 [    MainProcess][  Geofence][    INFO] Geofence Ifield added.
+2019-02-03 20:07:11,678 [    MainProcess][  Geofence][    INFO] Geofence Tinsley Green added.
+2019-02-03 20:07:11,679 [    MainProcess][  Geofence][    INFO] Geofence Pound Hill added.
+2019-02-03 20:07:11,679 [    MainProcess][  Geofence][    INFO] Geofence Crawley added.
+2019-02-03 20:07:11,680 [    MainProcess][  Geofence][    INFO] Geofence East Grinstead added.
+2019-02-03 20:07:11,680 [    MainProcess][  Geofence][    INFO] Geofence Horley added.
+2019-02-03 20:07:11,680 [    MainProcess][  Geofence][    INFO] Geofence Normans Bay added.
+2019-02-03 20:07:11,680 [    MainProcess][  Geofence][    INFO] Geofence Pevensey added.
+2019-02-03 20:07:11,681 [    MainProcess][  Geofence][    INFO] Geofence Langney added.
+2019-02-03 20:07:11,681 [    MainProcess][  Geofence][    INFO] Geofence Hankham added.
+2019-02-03 20:07:11,681 [    MainProcess][  Geofence][    INFO] Geofence Polegate added.
+2019-02-03 20:07:11,681 [    MainProcess][  Geofence][    INFO] Geofence Eastbourne added.
+2019-02-03 20:07:11,681 [    MainProcess][  Geofence][    INFO] Geofence Meads added.
+2019-02-03 20:07:11,681 [    MainProcess][  Geofence][    INFO] Geofence Hailsham added.
+2019-02-03 20:07:11,681 [    MainProcess][  Geofence][    INFO] Geofence Hove added.
+2019-02-03 20:07:11,681 [    MainProcess][  Geofence][    INFO] Geofence Hangleton added.
+2019-02-03 20:07:11,681 [    MainProcess][  Geofence][    INFO] Geofence Portslade added.
+2019-02-03 20:07:11,682 [    MainProcess][  Geofence][    INFO] Geofence Mile Oak added.
+2019-02-03 20:07:11,682 [    MainProcess][  Geofence][    INFO] Geofence Shoreham added.
+2019-02-03 20:07:11,682 [    MainProcess][  Geofence][    INFO] Geofence Lancing added.
+2019-02-03 20:07:11,682 [    MainProcess][  Geofence][    INFO] Geofence Steyning added.
+2019-02-03 20:07:11,682 [    MainProcess][  Geofence][    INFO] Geofence Southwick added.
+2019-02-03 20:07:11,682 [    MainProcess][  Geofence][    INFO] Geofence Bexhill added.
+2019-02-03 20:07:11,682 [    MainProcess][  Geofence][    INFO] Geofence Hastings added.
+2019-02-03 20:07:11,682 [    MainProcess][  Geofence][    INFO] Geofence Crowborough added.
+2019-02-03 20:07:11,683 [    MainProcess][  Geofence][    INFO] Geofence Lingfield added.
+2019-02-03 20:07:11,683 [    MainProcess][  Geofence][    INFO] Geofence Edenbridge added.
+2019-02-03 20:07:11,683 [    MainProcess][  Geofence][    INFO] Geofence Littlehampton added.
+2019-02-03 20:07:11,683 [    MainProcess][  Geofence][    INFO] Geofence East Preston added.
+2019-02-03 20:07:11,683 [    MainProcess][  Geofence][    INFO] Geofence Angmering added.
+2019-02-03 20:07:11,683 [    MainProcess][  Geofence][    INFO] Geofence Arundel added.
+2019-02-03 20:07:11,683 [    MainProcess][  Geofence][    INFO] Geofence Chichester added.
+2019-02-03 20:07:11,684 [    MainProcess][  Geofence][    INFO] Geofence Ovingdean added.
+2019-02-03 20:07:11,684 [    MainProcess][  Geofence][    INFO] Geofence Rottingdean added.
+2019-02-03 20:07:11,684 [    MainProcess][  Geofence][    INFO] Geofence Peacehaven added.
+2019-02-03 20:07:11,684 [    MainProcess][  Geofence][    INFO] Geofence Newhaven added.
+2019-02-03 20:07:11,684 [    MainProcess][  Geofence][    INFO] Geofence Seaford added.
+2019-02-03 20:07:11,684 [    MainProcess][  Geofence][    INFO] Geofence Uckfield added.
+2019-02-03 20:07:11,684 [    MainProcess][  Geofence][    INFO] Geofence Buxted added.
+2019-02-03 20:07:11,684 [    MainProcess][  Geofence][    INFO] Geofence Maresfield added.
+2019-02-03 20:07:11,684 [    MainProcess][  Geofence][    INFO] Geofence Fairwarp added.
+2019-02-03 20:07:11,685 [    MainProcess][  Geofence][    INFO] Geofence Burndell added!
+2019-02-03 20:07:11,685 [    MainProcess][   Manager][    INFO] Loading Alarms from the file at /home/scanbot/PokeAlarm/alarm_MAD.json
+2019-02-03 20:07:11,686 [    MainProcess][   Discord][    INFO] Discord Alarm has been created!
+2019-02-03 20:07:11,686 [    MainProcess][   Discord][    INFO] Discord Alarm has been created!
+2019-02-03 20:07:11,686 [    MainProcess][   Manager][    INFO] 2 active alarms found.
+2019-02-03 20:07:11,686 [    MainProcess][   Manager][    INFO] ----------- Manager 'sussexmad'  successfully created.
+2019-02-03 20:07:11,686 [    MainProcess][LoadConfig][    INFO] Loading Rules from file at /home/scanbot/PokeAlarm/rules_Sussex.json
+2019-02-03 20:07:11,687 [    MainProcess][    Server][    INFO] Starting up the Managers
+2019-02-03 20:07:11,688 [    MainProcess][    Server][    INFO] PokeAlarm is listening for webhooks on: http://178.250.73.132:4005
+2019-02-03 20:07:19,330 [    MainProcess][   Manager][    INFO] YMCA Sussex Central raid notification has been triggered in rule 'Raids' to Hove!
+2019-02-03 20:09:13,352 [    MainProcess][   Manager][    INFO] Decorative Seating raid notification has been triggered in rule 'Raids' to Shoreham!
