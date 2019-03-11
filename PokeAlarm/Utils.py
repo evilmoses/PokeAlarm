@@ -586,6 +586,7 @@ def get_string_for_quest_task(locale, typeid, condition, target):
             text += " " + locale.get_quest_type_name(401)
         match_object = re.search(r"'pokemon_ids': \[([0-9, ]+)\]", condition)
         if match_object is not None:
+                arr['poke'] = ""
                 pt = match_object.group(1).split(', ')
                 last = len(pt)
                 cur = 1
@@ -594,7 +595,8 @@ def get_string_for_quest_task(locale, typeid, condition, target):
                 else:
                     for ty in pt:
                         arr['poke'] += ('or ' if last == cur else '') + (
-                            locale.get_pokemon_name(int(ty)))
+                            locale.get_pokemon_name(int(ty))) + (
+                            '' if last == cur else ', ')
                         cur += 1
     elif typeid == 6:
         if str(target) == str(1):
@@ -620,9 +622,9 @@ def get_string_for_quest_task(locale, typeid, condition, target):
         arr['curve'] = ""
         arr['type'] = ""
         if re.search(r"'type': 14", condition) is not None:
-            arr['inrow'] = "in a row"
+            arr['inrow'] = " in a row"
         if re.search(r"'type': 15", condition) is not None:
-            arr['curve'] = locale.get_throw_type_name(13)
+            arr['curve'] = locale.get_throw_type_name(13) + " "
         match_object = re.search(r"'throw_type': ([0-9]{2})", condition)
         if match_object is not None:
             arr['type'] = locale.get_throw_type_name(
