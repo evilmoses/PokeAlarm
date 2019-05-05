@@ -219,8 +219,24 @@ class Manager(object):
                                  "named {}!".format(alarm))
 
         self.__raid_rules[name] = Rule(filters, alarms)
+        
+    # Add new Weather Rule
+    def add_weather_rule(self, name, filters, alarms):
+        if name in self.__weather_rules:
+            raise ValueError("Unable to add Rule: Weather Rule with the name "
+                             "{} already exists!".format(name))
 
-    # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        for filt in filters:
+            if filt not in self.__weather_filters:
+                raise ValueError("Unable to create Rule: No weather Filter "
+                                 "named {}!".format(filt))
+
+        for alarm in alarms:
+            if alarm not in self.__alarms:
+                raise ValueError("Unable to create Rule: No Alarm "
+                                 "named {}!".format(alarm))
+
+        self.__weather_rules[name] = Rule(filters, alarms)
 
     # Add new Quest Rule
     def add_quest_rule(self, name, filters, alarms):
