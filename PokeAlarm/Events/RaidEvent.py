@@ -105,6 +105,11 @@ class RaidEvent(BaseEvent):
         else:
             exraid = "\n*Potential EX Raid (" + exraid + ")*"
 
+        form = locale.get_form_name(self.mon_id, self.form_id)
+        if form == 'unknown':
+            form = ''
+        else:
+            form = form + ' '
         form_name = locale.get_form_name(self.mon_id, self.form_id)
         costume_name = locale.get_costume_name(
             self.mon_id, self.costume_id)
@@ -141,7 +146,7 @@ class RaidEvent(BaseEvent):
                 if Unknown.is_not(type2) else get_type_emoji(self.types[0])),
 
             # Form
-            'form': form_name,
+            'form': form,
             'form_or_empty': Unknown.or_empty(form_name),
             'form_id': self.form_id,
             'form_id_3': "{:03d}".format(self.form_id),
