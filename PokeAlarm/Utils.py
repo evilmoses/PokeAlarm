@@ -582,6 +582,8 @@ def get_string_for_quest_task(locale, typeid, condition, target):
         if re.search(r"'type': 6", condition) is not None:
             if re.search(r"'raid_level': \[3, 4, 5\]", condition) is not None:
                 text = locale.get_quest_type_name(801)
+            if re.search(r"'raid_level': \[2, 3, 4, 5\]", condition) is not None:
+                text = locale.get_quest_type_name(802)
     elif typeid == 13:
         arr['type'] = "berries "
         match_object = re.search(r"'item': ([0-9]+)", condition)
@@ -591,6 +593,21 @@ def get_string_for_quest_task(locale, typeid, condition, target):
     elif typeid == 15:
         if re.search(r"'type': 11", condition) is not None:
             text = locale.get_quest_type_name(151)
+        elif re.search(r"'type': 2", condition) is not None:
+            match_object = re.search(r"'pokemon_ids': \[([0-9, ]+)\]", condition)
+            if match_object is not None:
+                arr['poke'] = ""
+                pt = match_object.group(1).split(', ')
+                last = len(pt)
+                cur = 1
+                if last == 1:
+                    arr['poke'] = locale.get_pokemon_name(int(pt[0]))
+                else:
+                    for ty in pt:
+                        arr['poke'] += ('or ' if last == cur else '') + (
+                            locale.get_pokemon_name(int(ty))) + (
+                            '' if last == cur else ', ')
+                        cur += 1
     elif typeid == 16:
         arr['inrow'] = ""
         arr['curve'] = ""
@@ -602,11 +619,11 @@ def get_string_for_quest_task(locale, typeid, condition, target):
         match_object = re.search(r"'throw_type': ([0-9]{2})", condition)
         if match_object is not None:
             arr['type'] = locale.get_throw_type_name(
-                int(match_object.group(1))) + " "
+                match_object.group(1)) + " "
             if int(match_object.group(1)) == 12:
                 is_vowel = True
 
-    if str(target) == str(1):
+    if int(target) == int(1):
         text = text.replace(' eggs', ' egg')
         text = text.replace(' raids', ' raid')
         text = text.replace(' throws', ' throw')
@@ -617,7 +634,7 @@ def get_string_for_quest_task(locale, typeid, condition, target):
         arr['0'] = locale.get_indefinite_article(is_vowel)
 
     for key, val in arr.items():
-        text = text.replace('{' + key + '}', val)
+        text = text.replace('{' + key + '}', str(val))
     return text
 
 
