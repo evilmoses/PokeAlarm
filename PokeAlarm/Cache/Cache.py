@@ -29,7 +29,6 @@ class Cache(object):
         self._gym_name = {}
         self._gym_desc = {}
         self._gym_image = {}
-        self._reward = {}
 
     def monster_expiration(self, mon_id, expiration=None):
         """ Update and return the datetime that a monster expires."""
@@ -86,12 +85,12 @@ class Cache(object):
     def update_cell_weather(self, weather_cell_id, condition):
         """ Update the current weather in an S2 cell. """
         self._weather_hist[weather_cell_id] = condition
-
-    def quest_reward(self, stop_id, reward=None):
-        """ Update and return the reward for a quest."""
-        if Unknown.is_not(reward):
-            self._reward[stop_id] = reward
-        return self._reward.get(stop_id, Unknown.REGULAR)
+        
+    def quest_timestamp(self, stop_id, timestamp=None):
+        """ Update and return the datetime that a quest was timestamped."""
+        if timestamp is not None:
+            self._quest_timestamp[stop_id] = timestamp
+        return self._quest_timestamp.get(stop_id)
 
     def clean_and_save(self):
         """ Cleans the cache and saves the contents if capable. """

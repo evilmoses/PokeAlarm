@@ -1047,11 +1047,11 @@ class Manager(object):
             return
 
         # Check if previously processed and update expiration
-        if self.__cache.quest_reward(quest.stop_id) is not None:
-            log.debug("Quest {} was skipped because it was previously "
-                      "processed.".format(quest.stop_name))
+        if self.__cache.quest_timestamp(quest.stop_id) is not None:
+            log.info("Quest {} was skipped because it was previously "
+                      "processed.".format(quest.name))
             return
-        self.__cache.quest_reward(quest.stop_id, quest.reward)
+        self.__cache.quest_timestamp(quest.stop_id, quest.expiration)
 
         # Calculate distance and direction
         if self.__location is not None:

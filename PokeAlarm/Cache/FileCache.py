@@ -42,8 +42,8 @@ class FileCache(Cache):
                 self._gym_name = data.get('gym_name', {})
                 self._gym_desc = data.get('gym_desc', {})
                 self._gym_image = data.get('gym_image', {})
-                self._reward = data.get('reward', {})
-
+                self._quest_timestamp = data.get('quest_timestamp', {})
+                
                 log.debug("Cache loaded successfully.")
         except Exception as e:
             log.error("There was an error attempting to load the cache. The "
@@ -63,7 +63,7 @@ class FileCache(Cache):
             'gym_name': self._gym_name,
             'gym_desc': self._gym_desc,
             'gym_image': self._gym_image,
-            'reward': self._reward
+            'quest_timestamp': self._quest_timestamp
         }
         try:
             # Write to temporary file and then rename

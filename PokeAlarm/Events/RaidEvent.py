@@ -109,7 +109,7 @@ class RaidEvent(BaseEvent):
         if form == 'unknown':
             form = ''
         else:
-            form = form + ' '
+            form = ' (' + form + ')'
         form_name = locale.get_form_name(self.mon_id, self.form_id)
         costume_name = locale.get_costume_name(
             self.mon_id, self.costume_id)
