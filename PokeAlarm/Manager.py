@@ -1049,7 +1049,7 @@ class Manager(object):
         # Check if previously processed and update expiration
         if self.__cache.quest_timestamp(quest.stop_id) is not None:
             log.info("Quest {} was skipped because it was previously "
-                      "processed.".format(quest.name))
+                      "processed.".format(quest.stop_name))
             return
         self.__cache.quest_timestamp(quest.stop_id, quest.expiration)
 
