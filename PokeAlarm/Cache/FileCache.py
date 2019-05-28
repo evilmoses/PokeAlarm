@@ -38,11 +38,11 @@ class FileCache(Cache):
                 self._egg_hist = data.get('egg_hist', {})
                 self._raid_hist = data.get('raid_hist', {})
                 self._weather_hist = data.get('weather_hist', {})
+                self._quest_hist = data.get('quest_hist', {})
                 self._gym_team = data.get('gym_team', {})
                 self._gym_name = data.get('gym_name', {})
                 self._gym_desc = data.get('gym_desc', {})
                 self._gym_image = data.get('gym_image', {})
-                self._quest_timestamp = data.get('quest_timestamp', {})
                 
                 log.debug("Cache loaded successfully.")
         except Exception as e:
@@ -59,11 +59,11 @@ class FileCache(Cache):
             'egg_hist': self._egg_hist,
             'raid_hist': self._raid_hist,
             'weather_hist': self._weather_hist,
+            'quest_hist': self._quest_hist,
             'gym_team': self._gym_team,
             'gym_name': self._gym_name,
             'gym_desc': self._gym_desc,
-            'gym_image': self._gym_image,
-            'quest_timestamp': self._quest_timestamp
+            'gym_image': self._gym_image
         }
         try:
             # Write to temporary file and then rename
