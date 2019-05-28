@@ -25,6 +25,7 @@ class Cache(object):
         self._egg_hist = {}
         self._raid_hist = {}
         self._weather_hist = {}
+        self._quest_hist = {}
         self._gym_team = {}
         self._gym_name = {}
         self._gym_desc = {}
@@ -89,10 +90,15 @@ class Cache(object):
     def quest_timestamp(self, stop_id, timestamp=None):
         """ Update and return the datetime that a quest was timestamped."""
         if timestamp is not None:
-            self._quest_timestamp[stop_id] = timestamp
-        return self._quest_timestamp.get(stop_id)
+            self._quest_hist[stop_id] = timestamp
+        return self._quest_hist.get(stop_id)
 
     def clean_and_save(self):
+        """ Cleans the cache and saves the contents if capable. """
+        self._clean_hist()
+        self._save()
+        
+    def clean_and_save_quests(self):
         """ Cleans the cache and saves the contents if capable. """
         self._clean_hist()
         self._save()
@@ -105,7 +111,19 @@ class Cache(object):
         """ Clean expired objects to free up memory. """
         for hist in (
                 self._mon_hist, self._stop_hist, self._egg_hist,
-                self._raid_hist):
+                self._raid_hist, self._weather_hist, self._quest_hist):
+            old = []
+            now = datetime.utcnow()
+            for key, expiration in hist.iteritems():
+                if expiration < now:  # Track expired items
+                    old.append(key)
+            for key in old:  # Remove expired events
+                del hist[key]
+        log.debug("Cache cleaned!")
+        
+    def _clean_quest_hist(self):
+        """ Clean expired objects to free up memory. """
+        for hist in (self._quest_hist):
             old = []
             now = datetime.utcnow()
             for key, expiration in hist.iteritems():

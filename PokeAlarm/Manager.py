@@ -486,13 +486,20 @@ class Manager(object):
     def run(self):
         self.setup_in_process()
         last_clean = datetime.utcnow()
+        last_quest_clean = datetime.utcnow()
         while True:  # Run forever and ever
 
             # Clean out visited every 5 minutes
             if datetime.utcnow() - last_clean > timedelta(minutes=5):
-                log.debug("Cleaning cache...")
+                log.info("Cleaning cache...")
                 self.__cache.clean_and_save()
                 last_clean = datetime.utcnow()
+                
+            # Clean out visited every 5 minutes
+            if datetime.utcnow() - last_quest_clean > timedelta(minutes=240):
+                log.info("Cleaning quest cache...")
+                self.__cache.clean_and_save_quests()
+                last_quest_clean = datetime.utcnow()
 
             try:  # Get next object to process
                 event = self.__queue.get(block=True, timeout=5)
@@ -533,6 +540,7 @@ class Manager(object):
             gevent.sleep(0)
         # Save cache and exit
         self.__cache.clean_and_save()
+        self.__cache.clean_and_save_quests()
         raise gevent.GreenletExit()
 
     # Set the location of the Manager
