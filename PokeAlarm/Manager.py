@@ -1055,11 +1055,14 @@ class Manager(object):
             return
 
         # Check if previously processed and update expiration
-        if self.__cache.quest_timestamp(quest.stop_id) is not None:
+        if self.__cache.get_quest_timestamp(
+                quest.stop_id) == quest.expiration:
             log.info("Quest {} was skipped because it was previously "
                       "processed.".format(quest.stop_name))
             return
-        self.__cache.quest_timestamp(quest.stop_id, quest.expiration)
+            
+        self.__cache.update_quest_timestamp(
+            quest.stop_id, quest.expiration)
 
         # Calculate distance and direction
         if self.__location is not None:

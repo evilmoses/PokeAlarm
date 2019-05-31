@@ -87,11 +87,13 @@ class Cache(object):
         """ Update the current weather in an S2 cell. """
         self._weather_hist[weather_cell_id] = condition
         
-    def quest_timestamp(self, stop_id, timestamp=None):
-        """ Update and return the datetime that a quest was timestamped."""
-        if timestamp is not None:
-            self._quest_hist[stop_id] = timestamp
+    def get_quest_timestamp(self, stop_id, timestamp=None):
+        """ Returns the datetime that a quest was timestamped."""
         return self._quest_hist.get(stop_id)
+        
+    def update_quest_timestamp(self, stop_id, timestamp):
+        """ Update the datetime that a quest was timestamped."""
+        self._quest_hist[stop_id] = timestamp
 
     def clean_and_save(self):
         """ Cleans the cache and saves the contents if capable. """

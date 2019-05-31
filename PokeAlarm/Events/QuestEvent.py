@@ -41,8 +41,7 @@ class QuestEvent(BaseEvent):
         self.item_amount = data['item_amount']
         self.condition = data['quest_condition']
         self.target = data['quest_target']
-        self.expiration_string = datetime.datetime.now().strftime("%d/%m/%Y 23:59")
-        self.expiration = datetime.datetime.now()
+        self.expiration = datetime.datetime.now().strftime("%d/%m/%Y 23:59")
 
     def generate_dts(self, locale, timezone, units):
         """ Return a dict with all the DTS for this event. """
@@ -72,7 +71,6 @@ class QuestEvent(BaseEvent):
                 if self.reward == 'Pokemon'
                 else "{} ({})".format(locale.get_item_name(
                     self.item_id), self.item_amount)),
-            'expiry_string': self.expiration_string,
             'expiry': self.expiration
         })
         return dts
